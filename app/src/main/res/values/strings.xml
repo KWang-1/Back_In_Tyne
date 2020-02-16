@@ -8,6 +8,8 @@
 
     <!-- Home Fragment -->
 
+    <string name="home_title">Back In Tyne</string>
+
     <string name="home_intro">Welcome to the Back In Tyne App. This app will be your complete guide to historical sites in Northumberland.
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
 

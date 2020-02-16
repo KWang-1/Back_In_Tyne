@@ -97,11 +97,12 @@ public class HomeFragment extends Fragment {
 
         dataManager = MainActivity.getDataManager();
         cyclingHandler = new Handler();
-        cyclingHandler.postDelayed(cycleCards, CYCLE_DELAY_MILLIS);
+        cycleCards.run();
 
         return root;
     }
 
+    /*
     @Override
     public void onPause() {
         super.onPause();
@@ -119,5 +120,6 @@ public class HomeFragment extends Fragment {
         super.onDestroy();
         cyclingHandler.removeCallbacks(cycleCards);
     }
+    */
 
 }
