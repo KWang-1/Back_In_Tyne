@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<entries>
+
+    <entry>
+        <name>Lindisfarne Castle</name>
+        <address>Holy Island, Berwick-Upon-Tweed, Northumberland, TD15 2SH</address>
+        <era>Medieval</era>
+        <type>Castle</type>
+        <introduction>Lindisfarne Castle introduction placeholder</introduction>
+        <details>Tudor fort, converted into an Edwardian holiday home. Converted by Arts
+            and Crafts architect Edward Lutyens in 1903, this former holiday home began life as a Tudor
+            fort. Fearing a possible Scottish invasion, Henry VIII ordered the construction of the fort in
+            1542. Between 1570 and 1571, Elizabeth I updated and strengthened the defences by
+            adding new gun platforms. The need for a castle declined when James I came to power and
+            combined the Scottish and English thrones.</details>
+        <cost>Adult - £7</cost>
+        <facilities>"Toilets,
+            Cafes,
+            Pubs,
+            Shops"</facilities>
+        <public_transport>"Parking on Holy Island car park,
+            Shuttle services runs between car park and castle
+            subject to tides
+            Take a train to Berwick Upon Tweed then take the x18 Max 18 stops south to Beal. Then walk across the causeway to Holy Island, tides permitting"</public_transport>
+        <gallery>
+            <image>
+                <file_name>lindisfarne1.jpg</file_name>
+                <attribution>Matthew Hunt</attribution>
+            </image>
+            <image>
+                <file_name>lindisfarne2.jpg</file_name>
+                <attribution>Copyright Rick Crowley https://www.geograph.org.uk/photo/1143818</attribution>
+            </image>
+        </gallery>
+    </entry>
+
+    <entry>
+        <name>Arbeia Fort</name>
+        <address>Arbeia Roman Fort , Baring St, South Shields NE33 2BB</address>
+        <era>Roman</era>
+        <type>Fort</type>
+        <introduction>Arbeia Fort introduction placeholder</introduction>
+        <details>Standing above the entrance to the River Tyne, Arbeia South Shields' Roman Fort guarded the main sea route to Hadrian's Wall. It was a key garrison and military supply base to other forts along the Wall and is an important part of the history of Roman Britain.
+            Through the course of history Arbeia has had several guises; from the Roman Emperor's HQ for the Scottish invasion to a busy cosmopolitan port. It's hosted dramatic tales of murder, fire, and holds the key to ancient love stories. It was a huge supply base for the Roman army, home to 600 Roman troops and is said to be the birth place of the Northumbrian King Oswin.
+        </details>
+        <cost>Free</cost>
+        <facilities>Limited wheelchair access
+            Dogs welcome
+            Guided tours
+            Toilet and baby change facilities
+            Popup cafe in summer
+            </facilities>
+        <public_transport>Yellow line southbound from monument station. Exit at South Sheilds, 10 minute walk</public_transport>
+        <gallery>
+            <image>
+                <file_name>arbeia1.jpg</file_name>
+                <attribution>Chris Mckenna, 4 March 2005, https://en.wikipedia.org/wiki/Arbeia#/media/File:Arbeia_Roman_Fort_reconstructed_gateway.jpg</attribution>
+            </image>
+            <image>
+                <file_name>arbeia2.jpg</file_name>
+                <attribution>Chris Mckenna, 2 march 2005, https://no.m.wikipedia.org/wiki/Fil:Arbeia_Roman_Fort_grannaries.jpg</attribution>
+            </image>
+        </gallery>
+    </entry>
+
+    <entry>
+        <name>Flodden Field</name>
+        <address>Flodden Field, A697, Cornhill-on-Tweed, TD12 4SN
+        </address>
+        <era>Tudor</era>
+        <type>Battlefield</type>
+        <introduction>Flodden Field introduction placeholder</introduction>
+        <details>Following Henry VIII’s declaration of war with France, Scotland’s James IV launched a campaign to support their ally by distracting the English and invading the north. Henry’s veteran military commander Thomas Hoawrd, Earl of Surrey fought and defeated the Scots 9th September 1513, killing James and routing the SCottish force.
+            This battle cowed the Scots into submission and 90 years later the crowns of Scotland and England were unified.
+        </details>
+        <cost>Free</cost>
+        <facilities>Car Park
+            A bush
+        </facilities>
+        <public_transport>"Nearest railway station to the Flodden Battlefield is Berwick-upon-Tweed
+            Number 67 Bus from Berwick Railway Station to Cornhill-on-Tweed runs approximately every 2 hours.
+            "</public_transport>
+        <gallery>
+            <image>
+                <file_name>floddenfield1.jpg</file_name>
+                <attribution>Philip Hallin, June 2015,licensed for reuse under this Creative Commons Licence.
+                    https://www.geograph.org.uk/photo/4786264</attribution>
+            </image>
+            <image>
+                <file_name>floddenfield2.jpg</file_name>
+                <attribution>Peter Smith, December 2009
+                    https://www.flickr.com/photos/purpaboo/4266457701/</attribution>
+            </image>
+        </gallery>
+    </entry>
+
+</entries>
