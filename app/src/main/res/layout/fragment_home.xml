@@ -61,8 +61,8 @@
         app:layout_constraintEnd_toStartOf="@+id/search_button"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/map_button"
-        app:layout_constraintTop_toBottomOf="@+id/events_button_label"
-        app:srcCompat="@drawable/maps_background_temp" />
+        app:layout_constraintTop_toBottomOf="@+id/events_button_label"/>
+
 
     <ImageButton
         android:id="@+id/map_button"
@@ -74,7 +74,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/map_button_label"
-        app:srcCompat="@drawable/maps_background_temp" />
+         />
 
     <ImageButton
         android:id="@+id/search_button"
