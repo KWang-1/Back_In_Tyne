@@ -1,7 +1,10 @@
 package com.example.backintyne;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.view.View;
+import android.view.Window;
 
 import com.example.backintyne.data.DataManager;
 import com.example.backintyne.data.SiteEntry;
@@ -17,14 +20,14 @@ import androidx.navigation.ui.NavigationUI;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
+    View view;
     private static DataManager dataManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        view= this.getWindow().getDecorView();
         // Setup bottom bar
         BottomNavigationView navView = findViewById(R.id.nav_view);
 
@@ -49,6 +52,25 @@ public class MainActivity extends AppCompatActivity {
 
     public static DataManager getDataManager() {
         return dataManager;
+    }
+
+
+    public void changeColourCBM(View v){
+        Window window = this.getWindow();
+        view.setBackgroundResource(R.color.colourBlind);
+        window.setStatusBarColor(getResources().getColor(R.color.colourBlind));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colourBlind)));
+    }
+
+    public void changeColourDM(View v){
+
+        view.setBackgroundResource(R.color.dark);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.dark)));
+    }
+
+    public void changeColourReset(View v){
+        view.setBackgroundResource(R.color.colourBackground);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary)));
     }
 
 }
