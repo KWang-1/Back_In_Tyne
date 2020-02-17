@@ -20,8 +20,8 @@ import androidx.navigation.ui.NavigationUI;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
     View view;
-    private static DataManager dataManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,11 +47,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setLogo(R.mipmap.ic_launcher);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
-        dataManager = new DataManager(getResources(), getResources().openRawResource(R.raw.site_data));
-    }
-
-    public static DataManager getDataManager() {
-        return dataManager;
+        DataManager.createDataManager(getResources().openRawResource(R.raw.site_data), getResources().getAssets());
     }
 
 

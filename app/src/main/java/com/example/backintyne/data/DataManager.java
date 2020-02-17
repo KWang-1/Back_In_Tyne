@@ -1,7 +1,6 @@
 package com.example.backintyne.data;
 
 import android.content.res.AssetManager;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Xml;
@@ -15,10 +14,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class DataManager {
+public final class DataManager {
 
-    // Helper variables
-    private AssetManager assetManager;
+    // Static variables for public access/utility
+    private static DataManager dataManager = null;
+    private static AssetManager assetManager = null;
 
     // List of entries
     // Primary siteData structure
@@ -29,19 +29,22 @@ public class DataManager {
 
     // -------------------- Public Interface -------------------- //
 
-    // Immediately begins parsing the input stream into the entry list
-    public DataManager(Resources resources, InputStream in) {
-        this.assetManager = resources.getAssets();
-
-        try {
-            siteData = Collections.unmodifiableList(parseSiteData(in));
-        } catch (XmlPullParserException | IOException ex) {
-            ex.printStackTrace();
+    // Creates a DataManager instance based on given input stream
+    public static void createDataManager(InputStream in, AssetManager assetManager) {
+        if (dataManager != null) {
+            return;
         }
+        dataManager = new DataManager(in);
+        DataManager.assetManager = assetManager;
+    }
+
+    // Returns the static reference to the DataManager instance
+    public static DataManager getDataManager() {
+        return dataManager;
     }
 
     // Returns a drawable bitmap for an image in the assets folder
-    public Bitmap getImageBitMap(String assetFileName) throws IOException {
+    public static Bitmap getImageBitMap(String assetFileName) throws IOException {
         InputStream is = assetManager.open("images/" + assetFileName);
         return BitmapFactory.decodeStream(is);
     }
@@ -52,6 +55,15 @@ public class DataManager {
     }
 
     // -------------------- Private Functions -------------------- //
+
+    // Immediately begins parsing the input stream into the entry list
+    private DataManager(InputStream in) {
+        try {
+            siteData = Collections.unmodifiableList(parseSiteData(in));
+        } catch (XmlPullParserException | IOException ex) {
+            ex.printStackTrace();
+        }
+    }
 
     // Parses the XML formatted input stream into a list of SiteEntry
     private List<SiteEntry> parseSiteData(InputStream in) throws XmlPullParserException, IOException {
