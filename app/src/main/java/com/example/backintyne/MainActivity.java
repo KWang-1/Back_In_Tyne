@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        DataManager.createDataManager(getResources());
+
         setContentView(R.layout.activity_main);
         view= this.getWindow().getDecorView();
         // Setup bottom bar
@@ -46,8 +48,6 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.mipmap.ic_launcher);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-
-        DataManager.createDataManager(getResources());
     }
 
 

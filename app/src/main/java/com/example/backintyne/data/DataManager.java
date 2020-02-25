@@ -69,7 +69,7 @@ public final class DataManager {
     private DataManager(Resources resources) {
         try {
             siteData = Collections.unmodifiableList(parseSiteData(resources.openRawResource(R.raw.site_data)));
-            // eventData = Collections.unmodifiableList(parseEventData(resources.openRawResource(R.raw.event_data))); // TODO
+            eventData = Collections.unmodifiableList(parseEventData(resources.openRawResource(R.raw.event_data))); // TODO
         } catch (XmlPullParserException | IOException ex) {
             ex.printStackTrace();
         }
@@ -270,7 +270,7 @@ public final class DataManager {
             }
             if (parser.getName().equals("image")) {
                 ImageData imageData = readImage(parser);
-                if (!imageData.getFileName().isEmpty()) {
+                if (imageData.getFileName() != null) {
                     gallery.add(imageData);
                 }
             } else {
