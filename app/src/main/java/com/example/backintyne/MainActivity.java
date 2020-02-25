@@ -63,12 +63,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void changeColourDM(View v){
-
+        Window window = this.getWindow();
+        window.setStatusBarColor(getResources().getColor(R.color.black));
         view.setBackgroundResource(R.color.dark);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.dark)));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.darkPrimary)));
     }
 
     public void changeColourReset(View v){
+        Window window = this.getWindow();
+        window.setStatusBarColor(getResources().getColor(R.color.black));
         view.setBackgroundResource(R.color.colourBackground);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary)));
     }
