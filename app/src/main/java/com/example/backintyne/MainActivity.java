@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setLogo(R.mipmap.ic_launcher);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
-        DataManager.createDataManager(getResources().openRawResource(R.raw.site_data), getResources().getAssets());
+        DataManager.createDataManager(getResources());
     }
 
 

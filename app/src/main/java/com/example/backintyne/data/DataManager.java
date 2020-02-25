@@ -1,9 +1,12 @@
 package com.example.backintyne.data;
 
 import android.content.res.AssetManager;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Xml;
+
+import com.example.backintyne.R;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -21,8 +24,9 @@ public final class DataManager {
     private static AssetManager assetManager = null;
 
     // List of entries
-    // Primary siteData structure
+    // Primary data structures
     private List<SiteEntry> siteData = null;
+    private List<EventEntry> eventData = null;
 
     // Don't use namespace
     private static final String namespace = null;
@@ -30,12 +34,12 @@ public final class DataManager {
     // -------------------- Public Interface -------------------- //
 
     // Creates a DataManager instance based on given input stream
-    public static void createDataManager(InputStream in, AssetManager assetManager) {
+    public static void createDataManager(Resources resources) {
         if (dataManager != null) {
             return;
         }
-        dataManager = new DataManager(in);
-        DataManager.assetManager = assetManager;
+        dataManager = new DataManager(resources);
+        DataManager.assetManager = resources.getAssets();
     }
 
     // Returns the static reference to the DataManager instance
@@ -54,12 +58,18 @@ public final class DataManager {
         return siteData;
     }
 
+    // Returns a copy of the EventEntry list
+    public List<EventEntry> getEventData() {
+        return eventData;
+    }
+
     // -------------------- Private Functions -------------------- //
 
     // Immediately begins parsing the input stream into the entry list
-    private DataManager(InputStream in) {
+    private DataManager(Resources resources) {
         try {
-            siteData = Collections.unmodifiableList(parseSiteData(in));
+            siteData = Collections.unmodifiableList(parseSiteData(resources.openRawResource(R.raw.site_data)));
+            // eventData = Collections.unmodifiableList(parseEventData(resources.openRawResource(R.raw.event_data))); // TODO
         } catch (XmlPullParserException | IOException ex) {
             ex.printStackTrace();
         }
@@ -89,7 +99,7 @@ public final class DataManager {
 
                 // Parse all entry elements
                 if (parser.getName().equals("entry")) {
-                    entryList.add(parseEntry(parser));
+                    entryList.add(parseSiteEntry(parser));
                 } else {
                     skip(parser);
                 }
@@ -101,7 +111,7 @@ public final class DataManager {
         return entryList;
     }
 
-    private SiteEntry parseEntry(XmlPullParser parser) throws XmlPullParserException, IOException {
+    private SiteEntry parseSiteEntry(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, namespace, "entry");
 
         // Create temporary variables to hold entry siteData
@@ -158,6 +168,86 @@ public final class DataManager {
         return new SiteEntry(name, address, era, type, introduction, details, cost, facilities, gallery);
     }
 
+    private List<EventEntry> parseEventData(InputStream in) throws XmlPullParserException, IOException {
+        // Create output
+        List<EventEntry> entryList = new ArrayList<>();
+
+        // Begin parsing
+        try {
+            // Set up parser object
+            XmlPullParser parser = Xml.newPullParser();
+            parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
+            parser.setInput(in, null);
+
+            // Enter entries root element
+            parser.next();
+            parser.require(XmlPullParser.START_TAG, namespace, "entries");
+
+            // Parse until end of document
+            while (parser.next() != XmlPullParser.END_DOCUMENT) {
+                if (parser.getEventType() != XmlPullParser.START_TAG) {
+                    continue;
+                }
+
+                // Parse all entry elements
+                if (parser.getName().equals("entry")) {
+                    entryList.add(parseEventEntry(parser));
+                } else {
+                    skip(parser);
+                }
+            }
+        } finally {
+            in.close();
+        }
+
+        return entryList;
+    }
+
+    private EventEntry parseEventEntry(XmlPullParser parser) throws XmlPullParserException, IOException {
+        parser.require(XmlPullParser.START_TAG, namespace, "entry");
+
+        // Create temporary variables to hold entry siteData
+        String name = "";
+        String location = "";
+        String details = "";
+        String link = "";
+        String date = "";
+        List<ImageData> gallery = new ArrayList<>();
+
+        // Parse through entry element
+        while (parser.next() != XmlPullParser.END_TAG) {
+            if (parser.getEventType() != XmlPullParser.START_TAG) {
+                continue;
+            }
+
+            // Find appropriate parse method, and assign to appropriate output
+            switch (parser.getName()) {
+                case "name":
+                    name = readText(parser);
+                    break;
+                case "location":
+                    location = readText(parser);
+                    break;
+                case "details":
+                    details = readText(parser);
+                    break;
+                case "link":
+                    link = readText(parser);
+                    break;
+                case "date":
+                    date = readText(parser);
+                    break;
+                case "gallery":
+                    gallery = readGallery(parser);
+                    break;
+                default:
+                    skip(parser);
+            }
+        }
+
+        return new EventEntry(name, location, details, link, date, gallery);
+    }
+
     // General method to return text from inside an element as text
     private String readText(XmlPullParser parser) throws XmlPullParserException, IOException {
         String result = null;
@@ -179,7 +269,10 @@ public final class DataManager {
                 continue;
             }
             if (parser.getName().equals("image")) {
-                gallery.add(readImage(parser));
+                ImageData imageData = readImage(parser);
+                if (!imageData.getFileName().isEmpty()) {
+                    gallery.add(imageData);
+                }
             } else {
                 skip(parser);
             }

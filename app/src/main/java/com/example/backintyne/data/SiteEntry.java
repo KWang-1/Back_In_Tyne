@@ -15,7 +15,7 @@ public class SiteEntry {
     private final String facilities;
     private final List<ImageData> gallery;
 
-    public SiteEntry(String name, String address, String era, String type, String introduction, String details, String cost, String facilities, List<ImageData> gallery) {
+    SiteEntry(String name, String address, String era, String type, String introduction, String details, String cost, String facilities, List<ImageData> gallery) {
         this.name = name;
         this.address = address;
         this.era = era;
