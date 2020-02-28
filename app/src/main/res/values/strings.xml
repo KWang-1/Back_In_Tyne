@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">BackInTyne</string>
+    <string name="title_home">Home</string>
+    <string name="title_map">Map</string>
+    <string name="title_search">Search</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_events">Events</string>
+    <string name="title_info">Info</string>
+
+    <!-- Home Fragment -->
+
+    <string name="home_title">Back In Tyne</string>
+
+    <string name="home_intro">Welcome to the Back In Tyne App. This app will be your complete guide to historical sites in Northumberland.
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+
+    <string name="map_button_title_text">Map</string>
+    <string name="events_button_title_text">Events</string>
+    <string name="search_button_title_text">Search</string>
+
+    <!-- Search Fragment -->
+
+    <string name="search_intro">This is a definitive list of sites this app has information on. Type a name of a site into the search bar, filter the search via the filter button, on scroll through the complete list below.</string>
+
+    <string name="no_name">No name available</string>
+    <string name="no_description">No description available</string>
+
+    <!-- Map Fragment -->
+    <string name="mapSite0">Lindisfarne Castle</string>
+    <string name="mapSite1">Arbeia Fort</string>
+    <string name="mapSite2">Flodden Field</string>
+
+    <!-- Info Fragment -->
+    <string name="InfoPage">InfoPage</string>
+    <string name="infoGalleryButton">Gallery</string>
+    <string name="infoNameTesting">SITE NAME</string>
+    <string name="infoSiteAddressTesting">AddressAddressAddressAddressAddressAddressAddressAddress</string>
+    <string name="infoIntroductionTesing">IntroductionIntroductionIntroductionIntroduction</string>
+    <string name="infoDetailsTesting">DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent
+                                      DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent
+                                      DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent
+                                      DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent
+                                      DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent</string>
+    <string name="infoFacilitiesTesting">FacitiesFacitiesFacitiesFacitiesFacitiesFacities</string>
+
+</resources>
