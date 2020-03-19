@@ -1,9 +1,14 @@
 package com.example.backintyne.data;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.lang.ClassLoader;
+import 	java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.List;
 
-public class SiteEntry {
+public class SiteEntry implements Parcelable {
 
     private final String name;
     private final String address;
@@ -63,4 +68,47 @@ public class SiteEntry {
         return gallery;
     }
 
+    protected SiteEntry(Parcel in) {
+        gallery = new ArrayList<ImageData>();
+
+        name = in.readString();
+        address = in.readString();
+        era = in.readString();
+        type = in.readString();
+        introduction = in.readString();
+        details = in.readString();
+        cost = in.readString();
+        facilities = in.readString();
+        in.readList(gallery, ClassLoader.getSystemClassLoader());
+    }
+
+    public static final Creator<SiteEntry> CREATOR = new Creator<SiteEntry>() {
+        @Override
+        public SiteEntry createFromParcel(Parcel in) {
+            return new SiteEntry(in);
+        }
+
+        @Override
+        public SiteEntry[] newArray(int size) {
+            return new SiteEntry[size];
+        }
+    };
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(name);
+        dest.writeString(address);
+        dest.writeString(era);
+        dest.writeString(type);
+        dest.writeString(introduction);
+        dest.writeString(details);
+        dest.writeString(cost);
+        dest.writeString(facilities);
+        dest.writeList(gallery);
+    }
 }

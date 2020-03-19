@@ -15,4 +15,23 @@
     <string name="events_button_title_text">Events</string>
     <string name="search_button_title_text">Search</string>
 
+    <!-- Map Fragment -->
+    <string name="mapSite0">Lindisfarne Castle</string>
+    <string name="mapSite1">Arbeia Fort</string>
+    <string name="mapSite2">Flodden Field</string>
+
+    <!-- Info Fragment -->
+    <string name="InfoPage">InfoPage</string>
+    <string name="infoGalleryButton">Gallery</string>
+    <string name="infoNameTesting">SITE NAME</string>
+    <string name="infoSiteAddressTesting">AddressAddressAddressAddressAddressAddress</string>
+    <string name="infoIntroductionTesing">IntroductionIntroductionIntroductionIntroduction</string>
+    <string name="infoDetailsTesting">DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent
+                                      DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent
+                                      DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent
+                                      DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent
+                                      DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent</string>
+    <string name="infoFacilitiesTesting">FacitiesFacitiesFacitiesFacities</string>
+
+
 </resources>

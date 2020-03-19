@@ -25,13 +25,21 @@
         android:id="@+id/navigation_map"
         android:name="com.example.backintyne.ui.map.MapFragment"
         android:label="@string/title_map"
-        tools:layout="@layout/fragment_map" />
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_navigation_map_to_navigation_info"
+            app:destination="@id/navigation_info" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_search"
         android:name="com.example.backintyne.ui.search.SearchFragment"
         android:label="@string/title_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_info"
+            app:destination="@id/navigation_info" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_settings"
@@ -43,6 +51,12 @@
         android:name="com.example.backintyne.ui.events.EventsFragment"
         android:label="@string/title_events"
         tools:layout="@layout/fragment_events" />
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.example.backintyne.ui.info.InfoFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_info"/>
 
 
 </navigation>
