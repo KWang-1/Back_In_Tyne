@@ -47,7 +47,6 @@ public class MapFragment extends Fragment {
             public void onClick(View v) {
                 siteEntry = dataManager.getSiteData().get(0);
                 bundle.putParcelable("SiteEntryFromMap", siteEntry);
-                //bundle.putInt("mapButtonId", R.id.mapSite0);
                 NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
                 navController.navigate(R.id.action_navigation_map_to_navigation_info, bundle);
             }
@@ -58,7 +57,6 @@ public class MapFragment extends Fragment {
             public void onClick(View v) {
                 siteEntry = dataManager.getSiteData().get(1);
                 bundle.putParcelable("SiteEntryFromMap", siteEntry);
-                //bundle.putInt("mapButtonId", R.id.mapSite1);
                 NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
                 navController.navigate(R.id.action_navigation_map_to_navigation_info, bundle);
             }
@@ -70,7 +68,6 @@ public class MapFragment extends Fragment {
             {
                 siteEntry = dataManager.getSiteData().get(2);
                 bundle.putParcelable("SiteEntryFromMap", siteEntry);
-                //bundle.putInt("mapButtonId", R.id.mapSite2);
                 NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
                 navController.navigate(R.id.action_navigation_map_to_navigation_info, bundle);
             }

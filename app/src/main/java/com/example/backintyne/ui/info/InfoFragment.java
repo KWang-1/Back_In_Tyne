@@ -57,28 +57,11 @@ public class InfoFragment extends Fragment {
         siteEntry = getArguments().getParcelable("SiteEntryFromMap");
         setup(siteEntry);
 
-//        int Id = getArguments().getInt("mapButtonId");
-//
-//        switch (Id) {
-//            case R.id.mapSite0:
-//                setup(0);
-//                break;
-//
-//            case R.id.mapSite1:
-//                setup(1);
-//                break;
-//
-//            case R.id.mapSite2:
-//                setup(2);
-//                break;
-//        }
-
         return root;
     }
 
     private void setup (SiteEntry siteEntry) {
         dataManager = MainActivity.getDataManager();
-//        siteEntry = dataManager.getSiteData().get(Id);
 
         try {
             name.setText(siteEntry.getName());
