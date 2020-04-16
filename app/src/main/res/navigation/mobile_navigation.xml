@@ -59,5 +59,11 @@
         android:name="com.example.backintyne.ui.info.InfoFragment"
         android:label="@string/title_info" /><action android:id="@+id/action_global_navigation_home" app:destination="@id/navigation_home"/><action android:id="@+id/action_global_navigation_settings" app:destination="@id/navigation_settings"/><action android:id="@+id/action_global_navigation_search" app:destination="@id/navigation_search"/><action android:id="@+id/action_global_navigation_map" app:destination="@id/navigation_map"/>
 
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.example.backintyne.ui.info.InfoFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_info"/>
+
 
 </navigation>
