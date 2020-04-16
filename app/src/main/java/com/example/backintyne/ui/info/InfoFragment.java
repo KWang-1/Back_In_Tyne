@@ -36,7 +36,7 @@ public class InfoFragment extends Fragment {
     private TextView address;
     private TextView introduction;
     private TextView details;
-    private TextView facities;
+    private TextView facilities;
     private TextView public_transport;
 
     // UI
@@ -52,25 +52,27 @@ public class InfoFragment extends Fragment {
         address = root.findViewById(R.id.infoSiteAddress);
         introduction = root.findViewById(R.id.infoSiteIntroduction);
         details = root.findViewById(R.id.infoSiteDetails);
-        facities = root.findViewById(R.id.infoSiteFacilities);
-        public_transport = root.findViewById(R.id.infoSiteAddress);
+        facilities = root.findViewById(R.id.infoSiteFacilities);
+        public_transport = root.findViewById(R.id.infoSiteAddress); // TODO Replace
 
+        assert getArguments() != null;
         siteEntry = getArguments().getParcelable("SiteEntryFromMap");
+        assert siteEntry != null;
         setup(siteEntry);
 
         return root;
     }
 
     private void setup (SiteEntry siteEntry) {
-        dataManager = MainActivity.getDataManager();
+        dataManager = DataManager.getDataManager();
 
         try {
             name.setText(siteEntry.getName());
-            pic.setImageBitmap(dataManager.getImageBitMap(siteEntry.getGallery().get(0).getFileName()));
+            pic.setImageBitmap(DataManager.getImageBitMap(siteEntry.getGallery().get(0).getFileName()));
             address.setText(siteEntry.getAddress());
             introduction.setText(siteEntry.getIntroduction());
             details.setText(siteEntry.getDetails());
-            facities.setText(siteEntry.getFacilities());
+            facilities.setText(siteEntry.getFacilities());
         }
         catch (IOException ex) {
             ex.printStackTrace();

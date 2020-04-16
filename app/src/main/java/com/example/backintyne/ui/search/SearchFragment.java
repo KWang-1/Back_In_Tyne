@@ -20,6 +20,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.example.backintyne.R;
 import com.example.backintyne.data.DataManager;
@@ -148,20 +150,22 @@ public class SearchFragment extends Fragment {
                     (float) 8, getResources().getDisplayMetrics());
             layoutParams.setMargins(0, 0, 0, pixelsConversion);
 
-            // TODO Complete once InfoFragment implemented
             // Add click listener to navigate to info page
-            /*
+            results.setClickable(true);
             result.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    String name = v.findViewById(R.id.result_name).toString();
+                    TextView nameView = v.findViewById(R.id.result_name);
+                    String name = nameView.getText().toString();
                     SiteEntry entry = searchViewModel.findEntryByName(name);
                     if (entry != null) {
-                        // Navigate to InfoFragment with SiteEntry in passed parameter
+                        NavController navController = Navigation.findNavController(Objects.requireNonNull(getActivity()), R.id.nav_host_fragment);
+                        Bundle bundle = new Bundle();
+                        bundle.putParcelable("SiteEntryFromMap", entry);
+                        navController.navigate(R.id.action_navigation_search_to_navigation_info, bundle);
                     }
                 }
             });
-            */
 
             // Append result view to end of results view group
             results.addView(result, layoutParams);
