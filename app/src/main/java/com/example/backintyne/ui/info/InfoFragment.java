@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -31,7 +32,7 @@ public class InfoFragment extends Fragment {
 
     private Button gallery;
     private TextView name;
-    private ImageView pic;
+    private ImageButton pic;
     private TextView address;
     private TextView introduction;
     private TextView details;
