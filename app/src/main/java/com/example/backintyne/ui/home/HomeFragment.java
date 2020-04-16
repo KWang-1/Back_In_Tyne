@@ -18,6 +18,8 @@ import androidx.navigation.Navigation;
 
 import com.example.backintyne.R;
 
+import java.util.Objects;
+
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
@@ -41,7 +43,7 @@ public class HomeFragment extends Fragment {
         mapButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
+                NavController navController = Navigation.findNavController(Objects.requireNonNull(getActivity()), R.id.nav_host_fragment);
                 navController.navigate(R.id.action_navigation_home_to_navigation_map);
             }
         });
@@ -50,7 +52,7 @@ public class HomeFragment extends Fragment {
         eventsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
+                NavController navController = Navigation.findNavController(Objects.requireNonNull(getActivity()), R.id.nav_host_fragment);
                 navController.navigate(R.id.action_navigation_home_to_navigation_events);
             }
         });
@@ -59,7 +61,7 @@ public class HomeFragment extends Fragment {
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
+                NavController navController = Navigation.findNavController(Objects.requireNonNull(getActivity()), R.id.nav_host_fragment);
                 navController.navigate(R.id.action_navigation_home_to_navigation_search);
             }
         });

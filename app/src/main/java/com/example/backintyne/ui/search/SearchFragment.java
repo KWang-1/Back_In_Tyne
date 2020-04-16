@@ -1,11 +1,13 @@
 package com.example.backintyne.ui.search;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -26,6 +28,7 @@ import com.example.backintyne.data.SiteEntry;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class SearchFragment extends Fragment {
 
@@ -33,11 +36,15 @@ public class SearchFragment extends Fragment {
 
     private LinearLayout results;
 
+    private Activity activity;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         searchViewModel = ViewModelProviders.of(this).get(SearchViewModel.class);
         View root = inflater.inflate(R.layout.fragment_search, container, false);
+
+        activity = getActivity();
 
         // Initialize views
 
@@ -49,13 +56,14 @@ public class SearchFragment extends Fragment {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 searchViewModel.searchQuery(v.getText().toString());
+                hideSoftKeyboard(activity);
                 return true;
             }
         });
 
         // Initialize spinner items
         List<String> spinnerItems = getSpinnerItems();
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_item, spinnerItems);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(Objects.requireNonNull(getContext()), android.R.layout.simple_spinner_item, spinnerItems);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         // Initialize spinner with spinner items
@@ -158,6 +166,14 @@ public class SearchFragment extends Fragment {
             // Append result view to end of results view group
             results.addView(result, layoutParams);
         }
+    }
+
+    private static void hideSoftKeyboard(Activity activity) {
+        InputMethodManager inputMethodManager =
+                (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
+        assert inputMethodManager != null;
+        inputMethodManager.hideSoftInputFromWindow(
+                Objects.requireNonNull(activity.getCurrentFocus()).getWindowToken(), 0);
     }
 
 }
