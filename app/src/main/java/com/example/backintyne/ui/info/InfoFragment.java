@@ -36,6 +36,7 @@ public class InfoFragment extends Fragment {
     private TextView address;
     private TextView introduction;
     private TextView details;
+    private TextView description;
     private TextView facilities;
     private TextView public_transport;
 
@@ -52,6 +53,7 @@ public class InfoFragment extends Fragment {
         address = root.findViewById(R.id.infoSiteAddress);
         introduction = root.findViewById(R.id.infoSiteIntroduction);
         details = root.findViewById(R.id.infoSiteDetails);
+        description = root.findViewById(R.id.infoSiteDescription);
         facilities = root.findViewById(R.id.infoSiteFacilities);
         public_transport = root.findViewById(R.id.infoSiteAddress); // TODO Replace
 
@@ -72,6 +74,7 @@ public class InfoFragment extends Fragment {
             address.setText(siteEntry.getAddress());
             introduction.setText(siteEntry.getIntroduction());
             details.setText(siteEntry.getDetails());
+            description.setText(siteEntry.getDescription());
             facilities.setText(siteEntry.getFacilities());
         }
         catch (IOException ex) {
