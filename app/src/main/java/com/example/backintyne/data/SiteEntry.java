@@ -15,17 +15,19 @@ public class SiteEntry implements Parcelable {
     private final String era;
     private final String type;
     private final String introduction;
+    private final String description;
     private final String details;
     private final String cost;
     private final String facilities;
     private final List<ImageData> gallery;
 
-    SiteEntry(String name, String address, String era, String type, String introduction, String details, String cost, String facilities, List<ImageData> gallery) {
+    SiteEntry(String name, String address, String era, String type, String introduction, String description, String details, String cost, String facilities, List<ImageData> gallery) {
         this.name = name;
         this.address = address;
         this.era = era;
         this.type = type;
         this.introduction = introduction;
+        this.description = description;
         this.details = details;
         this.cost = cost;
         this.facilities = facilities;
@@ -52,6 +54,8 @@ public class SiteEntry implements Parcelable {
         return introduction;
     }
 
+    public String getDescription() { return description; }
+
     public String getDetails() {
         return details;
     }
@@ -76,6 +80,7 @@ public class SiteEntry implements Parcelable {
         era = in.readString();
         type = in.readString();
         introduction = in.readString();
+        description = in.readString();
         details = in.readString();
         cost = in.readString();
         facilities = in.readString();
@@ -106,6 +111,7 @@ public class SiteEntry implements Parcelable {
         dest.writeString(era);
         dest.writeString(type);
         dest.writeString(introduction);
+        dest.writeString(description);
         dest.writeString(details);
         dest.writeString(cost);
         dest.writeString(facilities);

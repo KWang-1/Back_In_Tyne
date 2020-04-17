@@ -120,6 +120,7 @@ public final class DataManager {
         String era = "";
         String type = "";
         String introduction = "";
+        String description = "";
         String details = "";
         String cost = "";
         String facilities = "";
@@ -148,6 +149,9 @@ public final class DataManager {
                 case "introduction":
                     introduction = readText(parser);
                     break;
+                case "description":
+                    description = readText(parser);
+                    break;
                 case "details":
                     details = readText(parser);
                     break;
@@ -165,7 +169,7 @@ public final class DataManager {
             }
         }
 
-        return new SiteEntry(name, address, era, type, introduction, details, cost, facilities, gallery);
+        return new SiteEntry(name, address, era, type, introduction, description, details, cost, facilities, gallery);
     }
 
     private List<EventEntry> parseEventData(InputStream in) throws XmlPullParserException, IOException {
