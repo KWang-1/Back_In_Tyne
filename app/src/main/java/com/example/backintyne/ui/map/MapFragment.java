@@ -1,5 +1,4 @@
 package com.example.backintyne.ui.map;
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;

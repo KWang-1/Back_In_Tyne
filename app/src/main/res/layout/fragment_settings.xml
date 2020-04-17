@@ -12,73 +12,61 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:text="Application Settings"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <View
+        android:id="@+id/Event_divisor_1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Setting_descrip" />
+
     <Button
         android:id="@+id/CBM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="313dp"
-        android:layout_marginBottom="547dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
         android:onClick="changeColourCBM"
         android:text="Colour Blind Mode"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_settings"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/col_sch_txt" />
 
     <Button
         android:id="@+id/DarkMode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="298dp"
-        android:layout_marginBottom="485dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="79dp"
         android:onClick="changeColourDM"
         android:text="Dark Mode"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CBM"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toEndOf="@+id/CBM"
+        app:layout_constraintTop_toBottomOf="@+id/Setting_descrip" />
 
     <Button
         android:id="@+id/ResetColour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="265dp"
-        android:layout_marginBottom="419dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="35dp"
         android:onClick="changeColourReset"
         android:text="Reset Colours"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DarkMode"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/DarkMode" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailContent"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="282dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="71dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ResetColour">
 
@@ -92,16 +80,33 @@
         android:id="@+id/emailSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="143dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="192dp"
 
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="41dp"
         android:text="contact us"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailContent" />
+
+    <TextView
+        android:id="@+id/Setting_descrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="20dp"
+        android:text="Use the settings bellow to tune the application to your liking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_settings" />
+
+    <TextView
+        android:id="@+id/col_sch_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="39dp"
+        android:text="Colour Scheme"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Setting_descrip" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
