@@ -11,8 +11,7 @@
 
     <string name="home_title">Back In Tyne</string>
 
-    <string name="home_intro">Welcome to the Back In Tyne App. This app will be your complete guide to historical sites in Northumberland.
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="home_intro">Welcome to BackInTyne. Discover locations across England\'s history rich North-East. Refine your search to find sites that match your passion for history.</string>
 
     <string name="map_button_title_text">Map</string>
     <string name="events_button_title_text">Events</string>
