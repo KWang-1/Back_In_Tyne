@@ -9,74 +9,125 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/imageView"
+        <ImageButton
+            android:id="@+id/infoSitePic1"
             android:layout_width="0dp"
             android:layout_height="250dp"
+            android:contentDescription="@string/info_pic_description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/title_text"
+            android:id="@+id/infoSiteName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="TextView"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/infoSitePic1" />
 
         <TextView
-            android:id="@+id/intro_text"
+            android:id="@+id/infoSiteIntroduction"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="TextView"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_text" />
+            app:layout_constraintTop_toBottomOf="@+id/infoSiteName" />
 
         <TextView
-            android:id="@+id/details_text"
+            android:id="@+id/infoSiteDescription"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="TextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/intro_text" />
+            app:layout_constraintTop_toBottomOf="@+id/infoSiteIntroduction" />
 
         <TextView
-            android:id="@+id/address_title"
+            android:id="@+id/infoSiteDetailsTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="TextView"
+            android:text="@string/details_title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/details_text" />
+            app:layout_constraintTop_toBottomOf="@+id/infoSiteDescription" />
 
         <TextView
-            android:id="@+id/address_text"
+            android:id="@+id/infoSiteDetails"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:text="TextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/address_title" />
+            app:layout_constraintTop_toBottomOf="@+id/infoSiteDetailsTitle" />
+
+        <TextView
+            android:id="@+id/infoSiteFacilitiesTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/facilities_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoSiteDetails" />
+
+        <TextView
+            android:id="@+id/infoSiteFacilities"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoSiteFacilitiesTitle" />
+
+        <TextView
+            android:id="@+id/infoSiteAddressTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/address_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoSiteFacilities" />
+
+        <TextView
+            android:id="@+id/infoSiteAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoSiteAddressTitle" />
+
+        <View
+            android:id="@+id/scroll_extender2"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginTop="64dp"
+            android:background="@color/colourBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/infoSiteAddress" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

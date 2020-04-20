@@ -46,7 +46,7 @@ public class InfoFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         infoViewModel =
                 ViewModelProviders.of(this).get(InfoViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_info, container, false);
+        View root = inflater.inflate(R.layout.fragment_info2, container, false);
 
         name = root.findViewById(R.id.infoSiteName);
         pic = root.findViewById(R.id.infoSitePic1);

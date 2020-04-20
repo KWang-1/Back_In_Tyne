@@ -110,7 +110,6 @@
                 android:layout_marginEnd="8dp"
                 android:fontFamily="sans-serif"
                 android:lineSpacingExtra="2sp"
-                android:text="@string/infoDetailsTesting"
                 android:textColor="@android:color/tertiary_text_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

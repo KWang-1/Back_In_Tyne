@@ -17,9 +17,19 @@
     <string name="events_button_title_text">Events</string>
     <string name="search_button_title_text">Search</string>
 
+    <string name="map_button_description">map button icon</string>
+    <string name="events_button_description">events button icon</string>
+    <string name="search_button_description">search button icon</string>
+
+    <string name="cycling_image_description">cycling image</string>
+    <string name="cycle_left_button_description">cycle left button</string>
+    <string name="cycle_right_button_description">cycle right button</string>
+
     <!-- Search Fragment -->
 
     <string name="search_intro">This is a definitive list of sites this app has information on. Type a name of a site into the search bar, filter the search via the filter button, on scroll through the complete list below.</string>
+
+    <string name="search_bar_hint">search</string>
 
     <string name="no_name">No name available</string>
     <string name="no_description">No description available</string>
@@ -37,6 +47,10 @@
     <string name="infoIntroductionTesing">IntroductionIntroductionIntroductionIntroductionIntroductionIntroductionIntroductionIntroduction</string>
     <string name="infoDescriptionTesting">DescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContent</string>
     <string name="infoFacilitiesTesting">FacitiesFacitiesFacitiesFacitiesFacitiesFacities</string>
-    <string name="infoDetailsTesting"></string>
+
+    <string name="details_title">Other details</string>
+    <string name="facilities_title">Facilities</string>
+    <string name="address_title">Address</string>
+    <string name="info_pic_description">site picture</string>
 
 </resources>
