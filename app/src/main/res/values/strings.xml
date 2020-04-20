@@ -34,12 +34,9 @@
     <string name="infoGalleryButton">Gallery</string>
     <string name="infoNameTesting">SITE NAME</string>
     <string name="infoSiteAddressTesting">AddressAddressAddressAddressAddressAddressAddressAddress</string>
-    <string name="infoIntroductionTesing">IntroductionIntroductionIntroductionIntroduction</string>
-    <string name="infoDetailsTesting">DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent
-                                      DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent
-                                      DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent
-                                      DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent
-                                      DeatilsContentDeatilsContentDeatilsContentDeatilsContentDeatilsContent</string>
+    <string name="infoIntroductionTesing">IntroductionIntroductionIntroductionIntroductionIntroductionIntroductionIntroductionIntroduction</string>
+    <string name="infoDescriptionTesting">DescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContent</string>
     <string name="infoFacilitiesTesting">FacitiesFacitiesFacitiesFacitiesFacitiesFacities</string>
+    <string name="infoDetailsTesting"></string>
 
 </resources>
