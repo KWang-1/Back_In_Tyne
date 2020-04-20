@@ -48,6 +48,7 @@
     <string name="infoDescriptionTesting">DescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContent</string>
     <string name="infoFacilitiesTesting">FacitiesFacitiesFacitiesFacitiesFacitiesFacities</string>
 
+    <string name="gallery_prompt">Tap for gallery</string>
     <string name="details_title">Other details</string>
     <string name="facilities_title">Facilities</string>
     <string name="address_title">Address</string>

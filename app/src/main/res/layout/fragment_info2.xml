@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -13,10 +14,25 @@
             android:id="@+id/infoSitePic1"
             android:layout_width="0dp"
             android:layout_height="250dp"
+            android:background="@android:color/transparent"
             android:contentDescription="@string/info_pic_description"
+            android:padding="0dp"
+            android:scaleType="fitXY"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/gallery_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/gallery_prompt"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/infoSitePic1"
+            app:layout_constraintTop_toTopOf="@+id/infoSitePic1" />
 
         <TextView
             android:id="@+id/infoSiteName"
@@ -61,6 +77,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/details_title"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/infoSiteDescription" />
@@ -83,6 +100,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/facilities_title"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/infoSiteDetails" />
@@ -105,6 +123,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/address_title"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/infoSiteFacilities" />
@@ -120,7 +139,7 @@
             app:layout_constraintTop_toBottomOf="@+id/infoSiteAddressTitle" />
 
         <View
-            android:id="@+id/scroll_extender2"
+            android:id="@+id/scroll_extender"
             android:layout_width="fill_parent"
             android:layout_height="2dip"
             android:layout_marginTop="64dp"

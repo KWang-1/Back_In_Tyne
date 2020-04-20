@@ -16,8 +16,6 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.backintyne.data.DataManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.util.Objects;
-
 public class MainActivity extends AppCompatActivity {
 
     View view;
