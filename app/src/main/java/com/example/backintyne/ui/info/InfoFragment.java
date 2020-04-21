@@ -72,6 +72,9 @@ public class InfoFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 NavController navController = Navigation.findNavController(Objects.requireNonNull(getActivity()), R.id.nav_host_fragment);
+                Bundle bundle = new Bundle();
+                SiteEntry entry = siteEntry;
+                bundle.putParcelable("SiteEntryFromInfo", entry);
                 navController.navigate(R.id.action_navigation_info_to_navigation_gallery);
             }
         });
