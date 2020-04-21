@@ -65,6 +65,8 @@ public class InfoFragment extends Fragment {
         assert siteEntry != null;
         setup(siteEntry);
 
+
+
         ImageButton mapButton = root.findViewById(R.id.infoSitePic1);
         mapButton.setOnClickListener(new View.OnClickListener() {
             @Override
