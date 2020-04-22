@@ -125,6 +125,8 @@ public final class DataManager {
         String cost = "";
         String facilities = "";
         List<ImageData> gallery = new ArrayList<>();
+        double longitude = 0;
+        double latitude = 0;
 
         // Parse through entry element
         while (parser.next() != XmlPullParser.END_TAG) {
@@ -164,12 +166,18 @@ public final class DataManager {
                 case "gallery":
                     gallery = readGallery(parser);
                     break;
+                case "longitude":
+                    longitude = readDouble(parser);
+                    break;
+                case "latitude":
+                    latitude = readDouble(parser);
+                    break;
                 default:
                     skip(parser);
             }
         }
 
-        return new SiteEntry(name, address, era, type, introduction, description, details, cost, facilities, gallery);
+        return new SiteEntry(name, address, era, type, introduction, description, details, cost, facilities, gallery, longitude, latitude);
     }
 
     private List<EventEntry> parseEventData(InputStream in) throws XmlPullParserException, IOException {
@@ -260,6 +268,17 @@ public final class DataManager {
         }
         parser.next();
         return result;
+    }
+
+    // General method to return text from inside an element as double
+    private double readDouble(XmlPullParser parser) throws XmlPullParserException, IOException {
+        String result = null;
+        if (parser.next() == XmlPullParser.TEXT) {
+            result = parser.getText();
+        }
+        parser.next();
+        assert result != null;
+        return Double.parseDouble(result);
     }
 
     // Method to read a gallery element in objects

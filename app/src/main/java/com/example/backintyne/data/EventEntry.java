@@ -43,4 +43,5 @@ public class EventEntry {
     public List<ImageData> getGallery() {
         return gallery;
     }
+
 }
