@@ -41,7 +41,7 @@ public class EventsFragment extends Fragment {
             //for each event
 
             View event = LayoutInflater.from(getContext()).inflate(R.layout.event_layout, null);
-            //set new view for event
+            //create new view for event
 
             //ImageView eventlogo = event.findViewById(R.id.event_logo);
             //try {
@@ -50,7 +50,7 @@ public class EventsFragment extends Fragment {
             //     ex.printStackTrace();
             //}
 
-            //set the data
+            //set the data for the event
             TextView eventName = event.findViewById(R.id.event_name);
             eventName.setText(entry.getName());
 
@@ -66,6 +66,7 @@ public class EventsFragment extends Fragment {
             TextView eventLink = event.findViewById(R.id.event_link);
             eventLink.setText(entry.getLink());
 
+            //set peramiters for the events layout
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
             int pixelsConversion = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,

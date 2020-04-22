@@ -59,25 +59,28 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //change the apps colour to its colour blind mode
     public void changeColourCBM(View v){
         Window window = this.getWindow();
-        view.setBackgroundResource(R.color.colourBlind);
-        window.setStatusBarColor(getResources().getColor(R.color.colourBlind));
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colourBlind)));
+        view.setBackgroundResource(R.color.colourBlindMain);//set the background colour
+        window.setStatusBarColor(getResources().getColor(R.color.colourBlindStatus));//change the status bar colour
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colourBlindSecondary)));//change the support bar
     }
 
+    //change the apps colour scheme to its dark mode
     public void changeColourDM(View v){
         Window window = this.getWindow();
         window.setStatusBarColor(getResources().getColor(R.color.black));
-        view.setBackgroundResource(R.color.dark);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.darkPrimary)));
+        view.setBackgroundResource(R.color.dark);//set the background to dark gray
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.darkPrimary)));//change the support bar colour
     }
 
+    //reset the colours to remove other colour schemes
     public void changeColourReset(View v){
         Window window = this.getWindow();
         window.setStatusBarColor(getResources().getColor(R.color.black));
-        view.setBackgroundResource(R.color.colourBackground);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary)));
+        view.setBackgroundResource(R.color.colourBackground);//reset the background colour
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary)));//reset the support bar
     }
 
 

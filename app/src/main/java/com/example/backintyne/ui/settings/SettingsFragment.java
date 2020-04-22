@@ -41,6 +41,7 @@ public class SettingsFragment extends Fragment {
 
         emailText  = (TextInputLayout) root.findViewById(R.id.emailContent);
 
+        //set on click listener for contact us button
         Button contactUs = root.findViewById(R.id.emailSend);
         contactUs.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,10 +60,14 @@ public class SettingsFragment extends Fragment {
 
         Intent i = new Intent(Intent.ACTION_SEND);
         i.setType("message/rfc822");
-        i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"benknic99@gmail.com"});
+
+        //where to send the email
+        i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"b8024568@newcastle.ac.uk"});
+
+        //set the subject of the email
         i.putExtra(Intent.EXTRA_SUBJECT, "backintyneApp");
 
-
+        //get the text to send in the email
         String content = emailText.toString();
 
         i.putExtra(Intent.EXTRA_TEXT   , content);
