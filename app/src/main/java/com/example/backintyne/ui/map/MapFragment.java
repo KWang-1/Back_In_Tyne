@@ -118,7 +118,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
             String imgPath = "map_icons/" + entry.getType() + ".png";
             BitmapDescriptor icon = BitmapDescriptorFactory.fromAsset(imgPath);
             mMap.addMarker(new MarkerOptions()
-                    .position(new LatLng(entry.getLongitude(), entry.getLatitude()))
+                    .position(new LatLng( entry.getLatitude(),entry.getLongitude()))
                     .title(entry.getName())
                     .snippet(entry.getIntroduction())
                     .icon(icon));
