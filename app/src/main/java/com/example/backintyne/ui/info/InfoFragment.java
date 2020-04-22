@@ -12,6 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.example.backintyne.MainActivity;
 import com.example.backintyne.R;
@@ -21,6 +23,7 @@ import com.example.backintyne.data.SiteEntry;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Objects;
 
 public class InfoFragment extends Fragment {
 
@@ -61,6 +64,20 @@ public class InfoFragment extends Fragment {
         siteEntry = getArguments().getParcelable("SiteEntryFromMap");
         assert siteEntry != null;
         setup(siteEntry);
+
+
+
+        ImageButton mapButton = root.findViewById(R.id.infoSitePic1);
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavController navController = Navigation.findNavController(Objects.requireNonNull(getActivity()), R.id.nav_host_fragment);
+                Bundle bundle = new Bundle();
+                SiteEntry entry = siteEntry;
+                bundle.putParcelable("SiteEntryFromInfo", entry);
+                navController.navigate(R.id.action_navigation_info_to_navigation_gallery, bundle);
+            }
+        });
 
         return root;
     }

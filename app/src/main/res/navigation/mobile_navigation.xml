@@ -57,7 +57,16 @@
     <fragment
         android:id="@+id/navigation_info"
         android:name="com.example.backintyne.ui.info.InfoFragment"
-        android:label="@string/title_info" /><action android:id="@+id/action_global_navigation_home" app:destination="@id/navigation_home"/><action android:id="@+id/action_global_navigation_settings" app:destination="@id/navigation_settings"/><action android:id="@+id/action_global_navigation_search" app:destination="@id/navigation_search"/><action android:id="@+id/action_global_navigation_map" app:destination="@id/navigation_map"/>
-
-
+        android:label="@string/title_info" /><action android:id="@+id/action_global_navigation_home" app:destination="@id/navigation_home"/>
+        <action android:id="@+id/action_global_navigation_settings" app:destination="@id/navigation_settings"/>
+        <action android:id="@+id/action_global_navigation_search" app:destination="@id/navigation_search"/>
+        <action android:id="@+id/action_global_navigation_map" app:destination="@id/navigation_map"/>
+        <action
+        android:id="@+id/action_navigation_info_to_navigation_gallery"
+        app:destination="@id/navigation_gallery" />
+    <fragment
+        android:id="@+id/navigation_gallery"
+        android:name="com.example.backintyne.ui.gallery.GalleryFragment"
+        android:label="@string/title_gallery"
+        tools:layout="@layout/fragment_gallery" />
 </navigation>
