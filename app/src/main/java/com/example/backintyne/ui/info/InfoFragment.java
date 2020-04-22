@@ -75,7 +75,7 @@ public class InfoFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 SiteEntry entry = siteEntry;
                 bundle.putParcelable("SiteEntryFromInfo", entry);
-                navController.navigate(R.id.action_navigation_info_to_navigation_gallery);
+                navController.navigate(R.id.action_navigation_info_to_navigation_gallery, bundle);
             }
         });
 
