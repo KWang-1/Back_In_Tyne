@@ -78,6 +78,14 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
         infoButton = root.findViewById(R.id.info);
         directionButton = root.findViewById(R.id.Directions);
 
+        // Disables buttons as they have no focus pointer so won't work yet
+        infoButton.setAlpha(.5f);
+        infoButton.setClickable(false);
+        infoButton.setEnabled(false);
+        directionButton.setAlpha(.5f);
+        directionButton.setClickable(false);
+        directionButton.setEnabled(false);
+
         return root;
     }
 
@@ -85,6 +93,20 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
     public void onMapReady(final GoogleMap googleMap) {
         // Uses custom info window
         googleMap.setInfoWindowAdapter(new InfoWindowCustom(getContext()));
+
+        googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+            @Override
+            public void onInfoWindowClick(Marker marker) {
+                SiteEntry entry = mapViewModel.findEntryByName(marker.getTitle());
+                if (entry != null) {
+                    focusedMarker = null;
+                    NavController navController = Navigation.findNavController(Objects.requireNonNull(getActivity()), R.id.nav_host_fragment);
+                    Bundle bundle = new Bundle();
+                    bundle.putParcelable("SiteEntryFromMap", entry);
+                    navController.navigate(R.id.action_navigation_map_to_navigation_info, bundle);
+                }
+            }
+        });
 
         // Add scenery markers
         LatLng home = new LatLng(55.4, -1.65);
@@ -122,11 +144,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
         googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                // If not site marker, return
-                if (marker.getTitle() == null || marker.getTitle().length() < 1) {
-                    return false;
-                }
-
                 // sets marker a focus and allows button usage
                 if (focusedMarker == null) {
                     infoButton.setAlpha(1);
@@ -141,14 +158,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
                 return false;
             }
         });
-
-        // Disables them as they have no focus pointer so won't work yet
-        infoButton.setAlpha(.5f);
-        infoButton.setClickable(false);
-        infoButton.setEnabled(false);
-        directionButton.setAlpha(.5f);
-        directionButton.setClickable(false);
-        directionButton.setEnabled(false);
 
         // Direction button event
         directionButton.setOnClickListener(new View.OnClickListener() {
@@ -178,6 +187,14 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
                     bundle.putParcelable("SiteEntryFromMap", entry);
                     navController.navigate(R.id.action_navigation_map_to_navigation_info, bundle);
                 }
+            }
+        });
+
+        googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+            @Override
+            public void onMapClick(LatLng arg0) {
+                // TODO Not yet implemented
+                // How do you hide the info window?
             }
         });
 
@@ -232,6 +249,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
     public void onProviderDisabled(String provider) {
 
     }
+
+
 
 }
 

@@ -35,23 +35,18 @@
     <string name="no_description">No description available</string>
 
     <!-- Map Fragment -->
-    <string name="mapSite0">Lindisfarne Castle</string>
-    <string name="mapSite1">Arbeia Fort</string>
-    <string name="mapSite2">Flodden Field</string>
+    <string name="info_button_label">Info</string>
+    <string name="directions_button_label">Directions</string>
+    <string name="info_window_image_description">Site Image</string>
 
     <!-- Info Fragment -->
     <string name="InfoPage">InfoPage</string>
     <string name="infoGalleryButton">Gallery</string>
-    <string name="infoNameTesting">SITE NAME</string>
-    <string name="infoSiteAddressTesting">AddressAddressAddressAddressAddressAddressAddressAddress</string>
-    <string name="infoIntroductionTesing">IntroductionIntroductionIntroductionIntroductionIntroductionIntroductionIntroductionIntroduction</string>
-    <string name="infoDescriptionTesting">DescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContentDescriptionContent</string>
-    <string name="infoFacilitiesTesting">FacitiesFacitiesFacitiesFacitiesFacitiesFacities</string>
-
     <string name="gallery_prompt">Tap for gallery</string>
     <string name="details_title">Other details</string>
     <string name="facilities_title">Facilities</string>
     <string name="address_title">Address</string>
+    <string name="public_transport_title">Public Transport</string>
     <string name="info_pic_description">site picture</string>
 
     <!-- Google maps API key -->

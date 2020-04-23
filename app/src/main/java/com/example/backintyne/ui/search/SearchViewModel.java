@@ -23,10 +23,7 @@ public class SearchViewModel extends ViewModel {
 
     void searchQuery(String query) {
         List<SiteEntry> results = new ArrayList<>();
-        query = query.toLowerCase();
-        if (!query.equals("")) {
-            searchQuery = query;
-        }
+        searchQuery = query.toLowerCase();
 
         for (SiteEntry entry : data.getSiteData()) {
 
@@ -40,17 +37,12 @@ public class SearchViewModel extends ViewModel {
     }
 
     SiteEntry findEntryByName(String name) {
-        for (SiteEntry entry : data.getSiteData()) {
-            if (entry.getName().equals(name)) {
-                return entry;
-            }
-        }
-        return null;
+        return data.findEntryByName(name);
     }
 
     void setFilterSelected(String selected) {
         filterSelected = selected;
-        searchQuery("");
+        searchQuery(searchQuery);
     }
 
     MutableLiveData<List<SiteEntry>> getSearchResults() {

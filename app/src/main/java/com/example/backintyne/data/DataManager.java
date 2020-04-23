@@ -47,6 +47,16 @@ public final class DataManager {
         return dataManager;
     }
 
+    // Gets the first entry that matches the name string
+    public SiteEntry findEntryByName(String name) {
+        for (SiteEntry entry : siteData) {
+            if (entry.getName().equals(name)) {
+                return entry;
+            }
+        }
+        return null;
+    }
+
     // Returns a drawable bitmap for an image in the assets folder
     public static Bitmap getImageBitMap(String assetFileName) throws IOException {
         InputStream is = assetManager.open("images/" + assetFileName);
@@ -124,6 +134,7 @@ public final class DataManager {
         String details = "";
         String cost = "";
         String facilities = "";
+        String publicTransport = "";
         List<ImageData> gallery = new ArrayList<>();
         double longitude = 0;
         double latitude = 0;
@@ -163,6 +174,9 @@ public final class DataManager {
                 case "facilities":
                     facilities = readText(parser);
                     break;
+                case "public_transport":
+                    publicTransport = readText(parser);
+                    break;
                 case "gallery":
                     gallery = readGallery(parser);
                     break;
@@ -177,7 +191,7 @@ public final class DataManager {
             }
         }
 
-        return new SiteEntry(name, address, era, type, introduction, description, details, cost, facilities, gallery, longitude, latitude);
+        return new SiteEntry(name, address, era, type, introduction, description, details, cost, facilities, publicTransport, gallery, longitude, latitude);
     }
 
     private List<EventEntry> parseEventData(InputStream in) throws XmlPullParserException, IOException {

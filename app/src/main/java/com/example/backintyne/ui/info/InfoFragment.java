@@ -4,9 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,25 +13,18 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
-import com.example.backintyne.MainActivity;
 import com.example.backintyne.R;
 import com.example.backintyne.data.DataManager;
-import com.example.backintyne.data.ImageData;
 import com.example.backintyne.data.SiteEntry;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.Objects;
 
 public class InfoFragment extends Fragment {
 
-    private InfoViewModel infoViewModel;
-    private int id;
+    private InfoViewModel infoViewModel; // For possible future extension
     private SiteEntry siteEntry;
-    private List<ImageData> pics;
-    private DataManager dataManager;
 
-    private Button gallery;
     private TextView name;
     private ImageButton pic;
     private TextView address;
@@ -47,9 +38,8 @@ public class InfoFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        infoViewModel =
-                ViewModelProviders.of(this).get(InfoViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_info2, container, false);
+        infoViewModel = ViewModelProviders.of(this).get(InfoViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_info, container, false);
 
         name = root.findViewById(R.id.infoSiteName);
         pic = root.findViewById(R.id.infoSitePic1);
@@ -58,17 +48,14 @@ public class InfoFragment extends Fragment {
         details = root.findViewById(R.id.infoSiteDetails);
         description = root.findViewById(R.id.infoSiteDescription);
         facilities = root.findViewById(R.id.infoSiteFacilities);
-        public_transport = root.findViewById(R.id.infoSiteAddress); // TODO Replace
+        public_transport = root.findViewById(R.id.infoSitePublicTransport);
 
         assert getArguments() != null;
         siteEntry = getArguments().getParcelable("SiteEntryFromMap");
         assert siteEntry != null;
         setup(siteEntry);
 
-
-
-        ImageButton mapButton = root.findViewById(R.id.infoSitePic1);
-        mapButton.setOnClickListener(new View.OnClickListener() {
+        pic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 NavController navController = Navigation.findNavController(Objects.requireNonNull(getActivity()), R.id.nav_host_fragment);
@@ -83,8 +70,6 @@ public class InfoFragment extends Fragment {
     }
 
     private void setup (SiteEntry siteEntry) {
-        dataManager = DataManager.getDataManager();
-
         try {
             name.setText(siteEntry.getName());
             pic.setImageBitmap(DataManager.getImageBitMap(siteEntry.getGallery().get(0).getFileName()));
@@ -93,6 +78,7 @@ public class InfoFragment extends Fragment {
             details.setText(siteEntry.getDetails());
             description.setText(siteEntry.getDescription());
             facilities.setText(siteEntry.getFacilities());
+            public_transport.setText(siteEntry.getPublicTransport());
         }
         catch (IOException ex) {
             ex.printStackTrace();

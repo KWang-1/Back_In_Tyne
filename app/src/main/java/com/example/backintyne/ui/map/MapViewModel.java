@@ -13,13 +13,9 @@ public class MapViewModel extends ViewModel {
 
     public MapViewModel() {}
 
+    // Indirection may seem redundant but adheres to design pattern
     SiteEntry findEntryByName(String name) {
-        for (SiteEntry entry : data.getSiteData()) {
-            if (entry.getName().equals(name)) {
-                return entry;
-            }
-        }
-        return null;
+        return data.findEntryByName(name);
     }
 
     List<SiteEntry> getEntries() {

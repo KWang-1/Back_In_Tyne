@@ -19,11 +19,12 @@ public class SiteEntry implements Parcelable {
     private final String details;
     private final String cost;
     private final String facilities;
+    private final String publicTransport;
     private final List<ImageData> gallery;
     private final double longitude;
     private final double latitude;
 
-    SiteEntry(String name, String address, String era, String type, String introduction, String description, String details, String cost, String facilities, List<ImageData> gallery, double longitude, double latitude) {
+    SiteEntry(String name, String address, String era, String type, String introduction, String description, String details, String cost, String facilities, String public_transport, List<ImageData> gallery, double longitude, double latitude) {
         this.name = name;
         this.address = address;
         this.era = era;
@@ -33,6 +34,7 @@ public class SiteEntry implements Parcelable {
         this.details = details;
         this.cost = cost;
         this.facilities = facilities;
+        this.publicTransport = public_transport;
         this.gallery = Collections.unmodifiableList(gallery);
         this.longitude = longitude;
         this.latitude = latitude;
@@ -50,6 +52,7 @@ public class SiteEntry implements Parcelable {
         details = in.readString();
         cost = in.readString();
         facilities = in.readString();
+        publicTransport = in.readString();
         in.readList(gallery, ClassLoader.getSystemClassLoader());
         longitude = in.readDouble();
         latitude = in.readDouble();
@@ -83,6 +86,7 @@ public class SiteEntry implements Parcelable {
         dest.writeString(details);
         dest.writeString(cost);
         dest.writeString(facilities);
+        dest.writeString(publicTransport);
         dest.writeList(gallery);
         dest.writeDouble(longitude);
         dest.writeDouble(latitude);
@@ -120,6 +124,10 @@ public class SiteEntry implements Parcelable {
 
     public String getFacilities() {
         return facilities;
+    }
+
+    public String getPublicTransport() {
+        return publicTransport;
     }
 
     public List<ImageData> getGallery() {
