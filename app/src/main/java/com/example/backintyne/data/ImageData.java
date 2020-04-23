@@ -1,5 +1,8 @@
 package com.example.backintyne.data;
 
+/**
+ * Represents an image.
+ */
 public class ImageData {
 
     private final String fileName;

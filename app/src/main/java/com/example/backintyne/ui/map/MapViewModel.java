@@ -7,6 +7,9 @@ import com.example.backintyne.data.SiteEntry;
 
 import java.util.List;
 
+/**
+ * View model for the map page.
+ */
 public class MapViewModel extends ViewModel {
 
     private DataManager data = DataManager.getDataManager();

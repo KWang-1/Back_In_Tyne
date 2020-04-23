@@ -21,6 +21,10 @@ import com.example.backintyne.data.SiteEntry;
 
 import java.util.Objects;
 
+/**
+ * Home page fragment.
+ * Displayed on app startup.
+ */
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;

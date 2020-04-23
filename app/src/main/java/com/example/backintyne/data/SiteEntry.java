@@ -8,6 +8,9 @@ import 	java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Represents a historical site.
+ */
 public class SiteEntry implements Parcelable {
 
     private final String name;
@@ -39,6 +42,8 @@ public class SiteEntry implements Parcelable {
         this.longitude = longitude;
         this.latitude = latitude;
     }
+
+    // Parcelable allows passing of object between fragments
 
     private SiteEntry(Parcel in) {
         gallery = new ArrayList<>();

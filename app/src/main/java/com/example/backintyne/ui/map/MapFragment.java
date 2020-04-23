@@ -28,7 +28,6 @@ import com.example.backintyne.R;
 // import google maps required parts
 import android.location.LocationListener;
 
-import com.example.backintyne.data.DataManager;
 import com.example.backintyne.data.SiteEntry;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -42,17 +41,18 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-// class MapActivity design to display the map and the content from the xml
-// extends Fragment activity used for google maps
 // implements OnMapReadyCallback to allow things to be done once map has been created
 // implements LocationListener to get accurate GPS for direction
+
+/**
+ * Map page fragment.
+ * Displays an interactive map with data for each site.
+ */
 public class MapFragment extends Fragment implements OnMapReadyCallback, LocationListener {
 
     private MapViewModel mapViewModel;
 
     private Button directionButton;
-
-    private String selectedEntryName = null;
 
     private final static int FINE_LOCATION_PERMISSION_REQUEST = 0;
     private final static int ACCESS_COARSE_LOCATION_REQUEST = 0;
@@ -146,7 +146,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
                     directionButton.setEnabled(true);
                 }
                 focusedMarker = marker;
-                selectedEntryName = marker.getTitle();
                 return false;
             }
         });

@@ -57,6 +57,10 @@
 
     <string name="gallery_image_description">gallery image</string>
 
+    <!-- Settings Fragment -->
+
+    <string name="email_message_hint">Send us a message</string>
+
     <!-- Google maps API key -->
     <string name="google_maps_key">AIzaSyAAIGrBnKHJ_DSIAh3tnyYq6u_iokwPMXs</string>
 

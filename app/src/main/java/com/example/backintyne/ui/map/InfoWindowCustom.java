@@ -22,6 +22,11 @@ import com.google.android.gms.maps.model.Marker;
 
 import java.io.IOException;
 
+/**
+ * Custom info window popup for the map page.
+ * Displays popup information for a given site entry.
+ * Links to the info page.
+ */
 public class InfoWindowCustom implements GoogleMap.InfoWindowAdapter {
 
     // used to set custom info window

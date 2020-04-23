@@ -11,6 +11,10 @@ import com.example.backintyne.data.SiteEntry;
 
 import java.io.IOException;
 
+/**
+ * View model for home page.
+ * Handles backend logic and data retrieval for the cycling cards feature.
+ */
 public class HomeViewModel extends ViewModel {
 
     private final DataManager dataManager;

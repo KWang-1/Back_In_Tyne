@@ -9,6 +9,10 @@ import com.example.backintyne.data.SiteEntry;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * View model for search page.
+ * Handles backend logic and query processing.
+ */
 public class SearchViewModel extends ViewModel {
 
     private DataManager data = DataManager.getDataManager();

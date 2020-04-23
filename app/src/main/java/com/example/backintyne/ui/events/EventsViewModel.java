@@ -4,16 +4,23 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.example.backintyne.data.DataManager;
+import com.example.backintyne.data.EventEntry;
+
+import java.util.List;
+
+/**
+ * ViewModel for Events page.
+ */
 public class EventsViewModel extends ViewModel {
 
-    private MutableLiveData<String> mText;
+    private DataManager data = DataManager.getDataManager();
 
-    public EventsViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+    public EventsViewModel() {}
+
+    List<EventEntry> getEventData() {
+        return data.getEventData();
     }
 
-    public LiveData<String> getText() {
-        return mText;
-    }
+
 }

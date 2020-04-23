@@ -17,6 +17,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Class for internal data management.
+ * Parses XML into object-oriented data structure accessible by rest of program.
+ */
 public final class DataManager {
 
     // Static variables for public access/utility
@@ -79,7 +83,7 @@ public final class DataManager {
     private DataManager(Resources resources) {
         try {
             siteData = Collections.unmodifiableList(parseSiteData(resources.openRawResource(R.raw.site_data)));
-            eventData = Collections.unmodifiableList(parseEventData(resources.openRawResource(R.raw.event_data))); // TODO
+            eventData = Collections.unmodifiableList(parseEventData(resources.openRawResource(R.raw.event_data)));
         } catch (XmlPullParserException | IOException ex) {
             ex.printStackTrace();
         }

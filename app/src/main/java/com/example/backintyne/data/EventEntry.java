@@ -2,6 +2,9 @@ package com.example.backintyne.data;
 
 import java.util.List;
 
+/**
+ * Represents an event organiser.
+ */
 public class EventEntry {
 
     private final String name;

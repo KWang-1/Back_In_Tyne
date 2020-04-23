@@ -16,17 +16,29 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.backintyne.data.DataManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+/**
+ * Activity loaded on startup.
+ * Initializes base layout, navigation system, and data management system.
+ * Implements app settings.
+ */
 public class MainActivity extends AppCompatActivity {
 
-    View view;
+    private View decorView;
+    private ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Initialize data management module
         DataManager.createDataManager(getResources());
 
+        // Setup layout
         setContentView(R.layout.activity_main);
-        view= this.getWindow().getDecorView();
+
+        // Save reference to app background
+        decorView = this.getWindow().getDecorView();
+
         // Setup bottom bar
         BottomNavigationView navView = findViewById(R.id.nav_view);
 
@@ -42,14 +54,12 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-        // Set action bar configurations
-        ActionBar actionBar = getSupportActionBar();
+        // Setup action bar
+        actionBar = getSupportActionBar();
         assert actionBar != null;
-        actionBar.setDisplayShowHomeEnabled(true);
-        actionBar.setLogo(R.mipmap.ic_launcher);
-        actionBar.setDisplayUseLogoEnabled(true);
     }
 
+    // Implements action bar back button functionality
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
@@ -62,25 +72,25 @@ public class MainActivity extends AppCompatActivity {
     //change the apps colour to its colour blind mode
     public void changeColourCBM(View v){
         Window window = this.getWindow();
-        view.setBackgroundResource(R.color.colourBlindMain);//set the background colour
-        window.setStatusBarColor(getResources().getColor(R.color.colourBlindStatus));//change the status bar colour
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colourBlindSecondary)));//change the support bar
+        decorView.setBackgroundResource(R.color.colourBlindMain); // set the background colour
+        window.setStatusBarColor(getResources().getColor(R.color.colourBlindStatus)); // change the status bar colour
+        actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colourBlindSecondary))); // change the support bar
     }
 
     //change the apps colour scheme to its dark mode
     public void changeColourDM(View v){
         Window window = this.getWindow();
         window.setStatusBarColor(getResources().getColor(R.color.black));
-        view.setBackgroundResource(R.color.dark);//set the background to dark gray
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.darkPrimary)));//change the support bar colour
+        decorView.setBackgroundResource(R.color.dark); // set the background to dark gray
+        actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.darkPrimary))); // change the support bar colour
     }
 
     //reset the colours to remove other colour schemes
     public void changeColourReset(View v){
         Window window = this.getWindow();
         window.setStatusBarColor(getResources().getColor(R.color.black));
-        view.setBackgroundResource(R.color.colourBackground);//reset the background colour
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary)));//reset the support bar
+        decorView.setBackgroundResource(R.color.colourBackground); // reset the background colour
+        actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary))); // reset the support bar
     }
 
 

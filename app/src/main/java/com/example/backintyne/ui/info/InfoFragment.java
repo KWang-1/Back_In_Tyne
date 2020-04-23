@@ -20,6 +20,10 @@ import com.example.backintyne.data.SiteEntry;
 import java.io.IOException;
 import java.util.Objects;
 
+/**
+ * Info page fragment.
+ * Displays the information for a given site entry.
+ */
 public class InfoFragment extends Fragment {
 
     private InfoViewModel infoViewModel; // For possible future extension
@@ -34,8 +38,6 @@ public class InfoFragment extends Fragment {
     private TextView facilities;
     private TextView public_transport;
     private TextView cost;
-
-    // UI
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

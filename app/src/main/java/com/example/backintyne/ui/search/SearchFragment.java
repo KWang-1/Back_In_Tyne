@@ -32,6 +32,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * Search page fragment.
+ * Displays all sites in list.
+ * Links to info page.
+ * Selection can be narrowed using a search query and/or the type filter.
+ */
 public class SearchFragment extends Fragment {
 
     private SearchViewModel searchViewModel;
