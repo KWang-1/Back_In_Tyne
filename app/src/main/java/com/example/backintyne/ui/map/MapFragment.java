@@ -50,7 +50,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
 
     private MapViewModel mapViewModel;
 
-    private Button infoButton;
     private Button directionButton;
 
     private String selectedEntryName = null;
@@ -75,13 +74,9 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
         mapFragment.getMapAsync(this);
 
         // Setup rest of UI
-        infoButton = root.findViewById(R.id.info);
         directionButton = root.findViewById(R.id.Directions);
 
         // Disables buttons as they have no focus pointer so won't work yet
-        infoButton.setAlpha(.5f);
-        infoButton.setClickable(false);
-        infoButton.setEnabled(false);
         directionButton.setAlpha(.5f);
         directionButton.setClickable(false);
         directionButton.setEnabled(false);
@@ -146,9 +141,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
             public boolean onMarkerClick(Marker marker) {
                 // sets marker a focus and allows button usage
                 if (focusedMarker == null) {
-                    infoButton.setAlpha(1);
-                    infoButton.setClickable(true);
-                    infoButton.setEnabled(true);
                     directionButton.setAlpha(1);
                     directionButton.setClickable(true);
                     directionButton.setEnabled(true);
@@ -172,29 +164,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
                 routeToDestination = googleMap.addPolyline(new PolylineOptions()
                         .clickable(true)
                         .add(currentLocation, focusedMarker.getPosition()));
-            }
-        });
-
-        // Info button event
-        infoButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SiteEntry entry = mapViewModel.findEntryByName(selectedEntryName);
-                if (entry != null) {
-                    focusedMarker = null;
-                    NavController navController = Navigation.findNavController(Objects.requireNonNull(getActivity()), R.id.nav_host_fragment);
-                    Bundle bundle = new Bundle();
-                    bundle.putParcelable("SiteEntryFromMap", entry);
-                    navController.navigate(R.id.action_navigation_map_to_navigation_info, bundle);
-                }
-            }
-        });
-
-        googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
-            @Override
-            public void onMapClick(LatLng arg0) {
-                // TODO Not yet implemented
-                // How do you hide the info window?
             }
         });
 
