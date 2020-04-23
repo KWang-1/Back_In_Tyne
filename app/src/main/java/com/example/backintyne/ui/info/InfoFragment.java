@@ -33,6 +33,7 @@ public class InfoFragment extends Fragment {
     private TextView description;
     private TextView facilities;
     private TextView public_transport;
+    private TextView cost;
 
     // UI
 
@@ -49,6 +50,7 @@ public class InfoFragment extends Fragment {
         description = root.findViewById(R.id.infoSiteDescription);
         facilities = root.findViewById(R.id.infoSiteFacilities);
         public_transport = root.findViewById(R.id.infoSitePublicTransport);
+        cost = root.findViewById(R.id.infoSiteCost);
 
         assert getArguments() != null;
         siteEntry = getArguments().getParcelable("SiteEntryFromMap");
@@ -79,6 +81,7 @@ public class InfoFragment extends Fragment {
             description.setText(siteEntry.getDescription());
             facilities.setText(siteEntry.getFacilities());
             public_transport.setText(siteEntry.getPublicTransport());
+            cost.setText(siteEntry.getCost());
         }
         catch (IOException ex) {
             ex.printStackTrace();

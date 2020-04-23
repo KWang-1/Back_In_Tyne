@@ -7,6 +7,7 @@
     <string name="title_events">Events</string>
     <string name="title_info">Info</string>
     <string name="title_gallery">Gallery</string>
+
     <!-- Home Fragment -->
 
     <string name="home_title">Back In Tyne</string>
@@ -35,11 +36,13 @@
     <string name="no_description">No description available</string>
 
     <!-- Map Fragment -->
+
     <string name="info_button_label">Info</string>
     <string name="directions_button_label">Directions</string>
     <string name="info_window_image_description">Site Image</string>
 
     <!-- Info Fragment -->
+
     <string name="InfoPage">InfoPage</string>
     <string name="infoGalleryButton">Gallery</string>
     <string name="gallery_prompt">Tap for gallery</string>
@@ -47,7 +50,12 @@
     <string name="facilities_title">Facilities</string>
     <string name="address_title">Address</string>
     <string name="public_transport_title">Public Transport</string>
+    <string name="cost_title">Cost</string>
     <string name="info_pic_description">site picture</string>
+
+    <!-- Gallery Fragment -->
+
+    <string name="gallery_image_description">gallery image</string>
 
     <!-- Google maps API key -->
     <string name="google_maps_key">AIzaSyAAIGrBnKHJ_DSIAh3tnyYq6u_iokwPMXs</string>

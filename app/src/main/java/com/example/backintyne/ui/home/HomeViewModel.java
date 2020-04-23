@@ -58,6 +58,11 @@ public class HomeViewModel extends ViewModel {
         cycleCards.run();
     }
 
+    SiteEntry getCurrentEntry() {
+        return dataManager.getSiteData().get(entryIndex - 1);
+    }
+
+
     MutableLiveData<String> getCyclingCardsTitle() {
         return cyclingCardsTitle;
     }

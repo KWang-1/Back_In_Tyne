@@ -42,7 +42,7 @@ public class InfoWindowCustom implements GoogleMap.InfoWindowAdapter {
         LayoutInflater inflater = (LayoutInflater)
                 context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         assert inflater != null;
-        View view = inflater.inflate(R.layout.echo_info_window2, null);
+        View view = inflater.inflate(R.layout.echo_info_window, null);
 
         // Find SiteEntry object
         SiteEntry entry = data.findEntryByName(marker.getTitle());

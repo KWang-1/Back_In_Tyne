@@ -17,6 +17,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.example.backintyne.R;
+import com.example.backintyne.data.SiteEntry;
 
 import java.util.Objects;
 
@@ -89,6 +90,21 @@ public class HomeFragment extends Fragment {
             @Override
             public void onChanged(Bitmap bitmap) {
                 cyclingCardsImage.setImageBitmap(bitmap);
+            }
+        });
+
+        cyclingCardsImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SiteEntry entry = homeViewModel.getCurrentEntry();
+                if (entry == null) {
+                    return;
+                }
+
+                NavController navController = Navigation.findNavController(Objects.requireNonNull(getActivity()), R.id.nav_host_fragment);
+                Bundle bundle = new Bundle();
+                bundle.putParcelable("SiteEntryFromMap", entry);
+                navController.navigate(R.id.action_navigation_home_to_navigation_info, bundle);
             }
         });
 
