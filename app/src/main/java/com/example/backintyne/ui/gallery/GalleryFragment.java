@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -32,15 +33,15 @@ public class GalleryFragment extends Fragment {
         int numofpics;
 
         SiteEntry entry;
-        //dataManager = DataManager.getDataManager();
-        //entry = dataManager.getSiteData().get(1);
 
+        //get the site entry data from the info page
         assert getArguments() != null;
         siteEntry = getArguments().getParcelable("SiteEntryFromInfo");
         assert siteEntry != null;
 
         entry = siteEntry;
 
+        //set peramiters for the pictures to be displayed
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         int pixelsConversion = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
@@ -48,10 +49,10 @@ public class GalleryFragment extends Fragment {
         layoutParams.setMargins(0, 0, 0, pixelsConversion);
 
 
-        numofpics = entry.getGallery().size();
+        numofpics = entry.getGallery().size(); //get the number of pictures needed to be shown in the gallery
         for (int i =0; i< numofpics;i++){
-            //create new image xml and set as each picture
 
+            //create new image xml and set as each picture
             View result = LayoutInflater.from(getContext()).inflate(R.layout.gallery_image, null);
 
             ImageView resultsImage = result.findViewById(R.id.result_Image);
@@ -61,6 +62,11 @@ public class GalleryFragment extends Fragment {
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
+
+            TextView eventDate = result.findViewById(R.id.image_attribution);
+            eventDate.setText(entry.getGallery().get(i).getAttribution());
+
+            //add the picture to the gallery
             gpics.addView(result, layoutParams);
         }
 

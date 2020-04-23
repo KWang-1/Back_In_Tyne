@@ -3,11 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    //scroll view to store images allowing user to scroll through the gallery
     <ScrollView
         android:id="@+id/gallery_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        //linear layout needed to store the images
         <LinearLayout
             android:id="@+id/gallery_pics"
             android:layout_width="match_parent"
