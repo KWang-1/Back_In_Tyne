@@ -5,6 +5,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.Manifest;
 import android.app.Activity;
@@ -19,8 +21,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-
-import java.io.IOException;
 import java.util.Objects;
 
 import com.example.backintyne.R;
@@ -49,27 +49,24 @@ import com.google.android.gms.maps.model.PolylineOptions;
 public class MapFragment extends Fragment implements OnMapReadyCallback, LocationListener {
 
     private MapViewModel mapViewModel;
-    private DataManager dataManager;
 
     private Button infoButton;
     private Button directionButton;
 
+    private String selectedEntryName = null;
+
     private final static int FINE_LOCATION_PERMISSION_REQUEST = 0;
     private final static int ACCESS_COARSE_LOCATION_REQUEST = 0;
-    private GoogleMap mMap;// map object
 
-    private Marker focusedMarker;// used to track most recent pointer to use it in direction or info button
-    private Polyline routeToDestination;// line used to draw between user and location they want  to get to
+    private Marker focusedMarker; // used to track most recent pointer to use it in direction or info button
+    private Polyline routeToDestination; // line used to draw between user and location they want  to get to
     private LatLng currentLocation = new LatLng(55.4, -1.65);
-    private LocationManager locationManager;// used in tracking gps location
-
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         mapViewModel = ViewModelProviders.of(this).get(MapViewModel.class);
         View root = inflater.inflate(R.layout.fragment_map, container, false);
-        dataManager = DataManager.getDataManager();
 
         // gets map fragment to use on app
         SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager()
@@ -84,50 +81,52 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
         return root;
     }
 
-
     @Override
     public void onMapReady(final GoogleMap googleMap) {
-        mMap = googleMap;
+        // Uses custom info window
+        googleMap.setInfoWindowAdapter(new InfoWindowCustom(getContext()));
 
-        // uses custom info window
-        mMap.setInfoWindowAdapter(new InfoWindowCustom(getContext()));
-
-        // add scenery markers
+        // Add scenery markers
         LatLng home = new LatLng(55.4, -1.65);
         BitmapDescriptor shipIcon = BitmapDescriptorFactory.fromAsset("map_icons/ship.png");
-        mMap.addMarker(new MarkerOptions()
+        googleMap.addMarker(new MarkerOptions()
                 .position(new LatLng(55.366625, -1.413960))
                 .icon(shipIcon));
-        mMap.addMarker(new MarkerOptions()
+        googleMap.addMarker(new MarkerOptions()
                 .position(new LatLng(55.966625, -1.213960))
                 .icon(shipIcon));
-        mMap.addMarker(new MarkerOptions()
+        googleMap.addMarker(new MarkerOptions()
                 .position(new LatLng(55.766625, -1.243960))
                 .icon(shipIcon));
-        mMap.addMarker(new MarkerOptions()
+        googleMap.addMarker(new MarkerOptions()
                 .position(new LatLng(55.166625, -1.12960))
                 .icon(shipIcon));
 
-        // set camera defaults
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(home));
-        mMap.setMinZoomPreference(8.5f);
-        mMap.setMaxZoomPreference(14.0f);
+        // Set camera defaults
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(home));
+        googleMap.setMinZoomPreference(8.5f);
+        googleMap.setMaxZoomPreference(14.0f);
 
         // Add each entry as marker
-        for (SiteEntry entry : dataManager.getSiteData()) {
+        for (SiteEntry entry : mapViewModel.getEntries()) {
             String imgPath = "map_icons/" + entry.getType() + ".png";
             BitmapDescriptor icon = BitmapDescriptorFactory.fromAsset(imgPath);
-            mMap.addMarker(new MarkerOptions()
-                    .position(new LatLng( entry.getLatitude(),entry.getLongitude()))
+            googleMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(entry.getLatitude(), entry.getLongitude()))
                     .title(entry.getName())
                     .snippet(entry.getIntroduction())
                     .icon(icon));
         }
 
-        // event whenever marker is clicked
-        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+        // Event whenever marker is clicked
+        googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
+                // If not site marker, return
+                if (marker.getTitle() == null || marker.getTitle().length() < 1) {
+                    return false;
+                }
+
                 // sets marker a focus and allows button usage
                 if (focusedMarker == null) {
                     infoButton.setAlpha(1);
@@ -138,11 +137,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
                     directionButton.setEnabled(true);
                 }
                 focusedMarker = marker;
+                selectedEntryName = marker.getTitle();
                 return false;
             }
         });
 
-        // disables them as they have no focus pointer so won't work yet
+        // Disables them as they have no focus pointer so won't work yet
         infoButton.setAlpha(.5f);
         infoButton.setClickable(false);
         infoButton.setEnabled(false);
@@ -150,7 +150,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
         directionButton.setClickable(false);
         directionButton.setEnabled(false);
 
-        // direction button event
+        // Direction button event
         directionButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -162,29 +162,31 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
                 // creates new line between user and focus pointer
                 routeToDestination = googleMap.addPolyline(new PolylineOptions()
                         .clickable(true)
-                        .add(
-                                currentLocation,
-                                focusedMarker.getPosition()));
+                        .add(currentLocation, focusedMarker.getPosition()));
             }
         });
 
-        //info button event
+        // Info button event
         infoButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                // needs implementing info window
+            public void onClick(View view) {
+                SiteEntry entry = mapViewModel.findEntryByName(selectedEntryName);
+                if (entry != null) {
+                    focusedMarker = null;
+                    NavController navController = Navigation.findNavController(Objects.requireNonNull(getActivity()), R.id.nav_host_fragment);
+                    Bundle bundle = new Bundle();
+                    bundle.putParcelable("SiteEntryFromMap", entry);
+                    navController.navigate(R.id.action_navigation_map_to_navigation_info, bundle);
+                }
             }
         });
 
     }
-
 
     @Override
     public void onLocationChanged(Location location) {
         currentLocation = new LatLng(location.getLatitude(), location.getLongitude());
     }
-
 
     private boolean getPermission() {
         Context context = getContext();
@@ -204,7 +206,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
             } else {
                 Log.d("MapsActivity", "got permissions");
                 // creates location manager to get gps
-                locationManager = (LocationManager) Objects.requireNonNull(getContext()).getSystemService(Context.LOCATION_SERVICE);
+                // used in tracking gps location
+                LocationManager locationManager = (LocationManager) Objects.requireNonNull(getContext()).getSystemService(Context.LOCATION_SERVICE);
                 assert locationManager != null;
                 locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, this);
                 return true;
