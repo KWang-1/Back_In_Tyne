@@ -27,7 +27,6 @@ public class GalleryFragment extends Fragment {
 
     private GalleryViewModel galleryViewModel;
     private SiteEntry siteEntry;
-    private LinearLayout gpics;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -35,19 +34,19 @@ public class GalleryFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_gallery, container, false);
         galleryViewModel = ViewModelProviders.of(this).get(GalleryViewModel.class);
 
-        gpics = root.findViewById(R.id.gallery_pics);
-        int numofpics;
+        LinearLayout galleryPics = root.findViewById(R.id.gallery_pics);
+        int picNum;
 
         SiteEntry entry;
 
-        //get the site entry data from the info page
+        // Get the site entry data from the info page
         assert getArguments() != null;
         siteEntry = getArguments().getParcelable("SiteEntryFromInfo");
         assert siteEntry != null;
 
         entry = siteEntry;
 
-        //set parameters for the pictures to be displayed
+        // Set parameters for the pictures to be displayed
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         int pixelsConversion = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
@@ -55,15 +54,15 @@ public class GalleryFragment extends Fragment {
         layoutParams.setMargins(0, 0, 0, pixelsConversion);
 
 
-        numofpics = entry.getGallery().size(); //get the number of pictures needed to be shown in the gallery
-        for (int i = 0; i< numofpics; i++){
+        picNum = entry.getGallery().size(); // Get the number of pictures needed to be shown in the gallery
+        for (int i = 0; i< picNum; i++){
 
-            //create new image xml and set as each picture
+            // Create new image xml and set as each picture
             View result = LayoutInflater.from(getContext()).inflate(R.layout.gallery_image, null);
 
             ImageView resultsImage = result.findViewById(R.id.result_Image);
             try {
-                //set the image
+                // Set the image
                 resultsImage.setImageBitmap(DataManager.getImageBitMap(entry.getGallery().get(i).getFileName()));
             } catch (IOException ex) {
                 ex.printStackTrace();
@@ -72,8 +71,8 @@ public class GalleryFragment extends Fragment {
             TextView eventDate = result.findViewById(R.id.image_attribution);
             eventDate.setText(entry.getGallery().get(i).getAttribution());
 
-            //add the picture to the gallery
-            gpics.addView(result, layoutParams);
+            // Add the picture to the gallery
+            galleryPics.addView(result, layoutParams);
         }
 
 

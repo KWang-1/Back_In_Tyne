@@ -33,7 +33,7 @@ public class SettingsFragment extends Fragment {
         emailText = root.findViewById(R.id.emailContent);
 
         //set on click listener for contact us button
-        Button contactUs = root.findViewById(R.id.emailSend);
+        Button contactUs = root.findViewById(R.id.send_email_button);
         contactUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

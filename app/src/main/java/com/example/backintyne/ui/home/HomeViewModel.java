@@ -19,10 +19,12 @@ public class HomeViewModel extends ViewModel {
 
     private final DataManager dataManager;
 
+    // Variables for controlling cycling action
     private Handler cyclingHandler;
     private int entryIndex = 0;
     private static final int CYCLE_DELAY_MILLIS = 5000;
 
+    // Mutable data for observation by view
     private MutableLiveData<String> cyclingCardsTitle = new MutableLiveData<>();
     private MutableLiveData<String> cyclingCardsText = new MutableLiveData<>();
     private MutableLiveData<Bitmap> cyclingCardsImage = new MutableLiveData<>();
@@ -33,9 +35,11 @@ public class HomeViewModel extends ViewModel {
         cycleCards.run();
     }
 
+    // Cycling action thread
     private Runnable cycleCards = new Runnable() {
         @Override
         public void run() {
+            // Attempt to set data to new entry index
             try {
                 SiteEntry entry = dataManager.getSiteData().get(entryIndex);
                 cyclingCardsTitle.setValue(entry.getName());
@@ -44,12 +48,14 @@ public class HomeViewModel extends ViewModel {
             } catch (IOException ex) {
                 ex.printStackTrace();
             } finally {
+                // Increment index regardless of success or failure
                 entryIndex = (entryIndex + 1) % dataManager.getSiteData().size();
                 cyclingHandler.postDelayed(cycleCards, CYCLE_DELAY_MILLIS);
             }
         }
     };
 
+    // Change entry index to previous index
     void cycleLeft() {
         cyclingHandler.removeCallbacks(cycleCards);
         int dataSize = dataManager.getSiteData().size();
@@ -57,15 +63,16 @@ public class HomeViewModel extends ViewModel {
         cycleCards.run();
     }
 
+    // Change entry index to next index
     void cycleRight() {
         cyclingHandler.removeCallbacks(cycleCards);
         cycleCards.run();
     }
 
+    // For navigation using cycling cards
     SiteEntry getCurrentEntry() {
         return dataManager.getSiteData().get(entryIndex - 1);
     }
-
 
     MutableLiveData<String> getCyclingCardsTitle() {
         return cyclingCardsTitle;

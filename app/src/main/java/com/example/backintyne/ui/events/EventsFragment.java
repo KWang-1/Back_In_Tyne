@@ -23,30 +23,20 @@ public class EventsFragment extends Fragment {
 
     private EventsViewModel eventsViewModel;
 
-    private LinearLayout events;
-    // UI
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         eventsViewModel = ViewModelProviders.of(this).get(EventsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_events, container, false);
 
-        LinearLayout eventsLayout = root.findViewById(R.id.Events);
+        LinearLayout eventsLayout = root.findViewById(R.id.events);
 
         // For each event
         for (EventEntry entry : eventsViewModel.getEventData()) {
 
+            // Create new view for event
             View event = LayoutInflater.from(getContext()).inflate(R.layout.event_layout, null);
-            //create new view for event
 
-            //ImageView eventlogo = event.findViewById(R.id.event_logo);
-            //try {
-            //    eventlogo.setImageBitmap(DataManager.getImageBitMap(entry.getGallery().get(0).getFileName()));
-            //} catch (IOException ex) {
-            //     ex.printStackTrace();
-            //}
-
-            //set the data for the event
+            // Set the data for the event
             TextView eventName = event.findViewById(R.id.event_name);
             eventName.setText(entry.getName());
 
@@ -62,14 +52,14 @@ public class EventsFragment extends Fragment {
             TextView eventLink = event.findViewById(R.id.event_link);
             eventLink.setText(entry.getLink());
 
-            //set parameters for the events layout
+            // Set parameters for the events layout
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
             int pixelsConversion = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
                     (float) 8, getResources().getDisplayMetrics());
             layoutParams.setMargins(0, 0, 0, pixelsConversion);
 
-            //add the event to the page
+            // Add the event to the page
             eventsLayout.addView(event, layoutParams);
         }
 

@@ -58,7 +58,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
     private final static int ACCESS_COARSE_LOCATION_REQUEST = 0;
 
     private Marker focusedMarker; // used to track most recent pointer to use it in direction or info button
-    private Polyline routeToDestination; // line used to draw between user and location they want  to get to
     private LatLng currentLocation = new LatLng(55.4, -1.65);
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -139,7 +138,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
         googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                // sets marker a focus and allows button usage
+                // Sets marker a focus and allows button usage
                 if (focusedMarker == null) {
                     directionButton.setAlpha(1);
                     directionButton.setClickable(true);
@@ -151,18 +150,16 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
         });
 
         // Direction button event
+        // Makes a request to the view model which makes a request to launch google maps
         directionButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
-                // removes old line
-                if (routeToDestination != null) {
-                    routeToDestination.remove();
+                if (focusedMarker == null) {
+                    return;
                 }
-                // creates new line between user and focus pointer
-                routeToDestination = googleMap.addPolyline(new PolylineOptions()
-                        .clickable(true)
-                        .add(currentLocation, focusedMarker.getPosition()));
+                SiteEntry destSite = mapViewModel.findEntryByName(focusedMarker.getTitle());
+                LatLng dest = new LatLng(destSite.getLatitude(), destSite.getLongitude());
+                mapViewModel.launchGoogleMapsWithDirections(Objects.requireNonNull(getActivity()), currentLocation, dest);
             }
         });
 
@@ -202,7 +199,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
         return false;
     }
 
-    // require from implementation but not required
+    // Required but implementation not needed
+
     @Override
     public void onStatusChanged(String provider, int status, Bundle extras) {
 

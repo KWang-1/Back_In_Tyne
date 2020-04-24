@@ -44,6 +44,7 @@ public class InfoFragment extends Fragment {
         infoViewModel = ViewModelProviders.of(this).get(InfoViewModel.class);
         View root = inflater.inflate(R.layout.fragment_info, container, false);
 
+        // Retrieve views
         name = root.findViewById(R.id.infoSiteName);
         pic = root.findViewById(R.id.infoSitePic1);
         address = root.findViewById(R.id.infoSiteAddress);
@@ -54,11 +55,13 @@ public class InfoFragment extends Fragment {
         public_transport = root.findViewById(R.id.infoSitePublicTransport);
         cost = root.findViewById(R.id.infoSiteCost);
 
+        // Retrieve SiteEntry object from passed bundle
         assert getArguments() != null;
         siteEntry = getArguments().getParcelable("SiteEntryFromMap");
         assert siteEntry != null;
         setup(siteEntry);
 
+        // Initialize gallery button
         pic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,6 +76,7 @@ public class InfoFragment extends Fragment {
         return root;
     }
 
+    // Initialize all views using SiteEntry object data
     private void setup (SiteEntry siteEntry) {
         try {
             name.setText(siteEntry.getName());

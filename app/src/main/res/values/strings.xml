@@ -26,6 +26,12 @@
     <string name="cycle_left_button_description">cycle left button</string>
     <string name="cycle_right_button_description">cycle right button</string>
 
+    <!-- Map Fragment -->
+
+    <string name="info_button_label">Info</string>
+    <string name="directions_button_label">Directions</string>
+    <string name="info_window_image_description">Site Image</string>
+
     <!-- Search Fragment -->
 
     <string name="search_intro">This is a definitive list of sites this app has information on. Type a name of a site into the search bar, filter the search via the filter button, on scroll through the complete list below.</string>
@@ -34,12 +40,6 @@
 
     <string name="no_name">No name available</string>
     <string name="no_description">No description available</string>
-
-    <!-- Map Fragment -->
-
-    <string name="info_button_label">Info</string>
-    <string name="directions_button_label">Directions</string>
-    <string name="info_window_image_description">Site Image</string>
 
     <!-- Info Fragment -->
 
@@ -57,9 +57,23 @@
 
     <string name="gallery_image_description">gallery image</string>
 
+    <!-- Events Fragment -->
+
+    <string name="events_title">Meet new people…</string>
+    <string name="events_description">Northumbria has a thriving community of people who have an interest for the history of the local area. With the resources below you can attend events hosted by these communities to learn and make connections. We highly encourage this as it is a way for you to get to know people who share a similar passion for History. A gateway for you to experience what Northumbria has to offer and take your historical knowledge to the next level.</string>
+    <string name="events_renact_title"> Re-enactment societies:</string>
+
     <!-- Settings Fragment -->
 
+    <string name="colour_scheme_title">Colour Schemes</string>
+    <string name="colour_scheme_info_text">Use these buttons to change the apps colour scheme</string>
+    <string name="dark_mode_button_text">Dark mode</string>
+    <string name="colour_blind_button_text">Colour blind mode</string>
+    <string name="reset_colours_button_text">Reset colours</string>
+    <string name="contact_us_title">Contact us</string>
+    <string name="email_message_info_text">Type out a message and press send to send us an email</string>
     <string name="email_message_hint">Send us a message</string>
+    <string name="send_email_button_text">Send</string>
 
     <!-- Google maps API key -->
     <string name="google_maps_key">AIzaSyAAIGrBnKHJ_DSIAh3tnyYq6u_iokwPMXs</string>
