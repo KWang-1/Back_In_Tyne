@@ -37,7 +37,7 @@ public class SettingsFragment extends Fragment {
         contactUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                settingsViewModel.sendEmail(Objects.requireNonNull(getActivity()), emailText.toString());
+                settingsViewModel.sendEmail(Objects.requireNonNull(getActivity()), emailText.getEditText().getText().toString());
             }
         });
 
