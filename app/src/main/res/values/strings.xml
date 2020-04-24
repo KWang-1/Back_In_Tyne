@@ -31,13 +31,12 @@
     <string name="info_button_label">Info</string>
     <string name="directions_button_label">Directions</string>
     <string name="info_window_image_description">Site Image</string>
+    <string name="info_window_info_prompt">Tap for more details</string>
 
     <!-- Search Fragment -->
 
     <string name="search_intro">This is a definitive list of sites this app has information on. Type a name of a site into the search bar, filter the search via the filter button, on scroll through the complete list below.</string>
-
     <string name="search_bar_hint">search</string>
-
     <string name="no_name">No name available</string>
     <string name="no_description">No description available</string>
 

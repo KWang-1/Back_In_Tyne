@@ -1,5 +1,6 @@
 package com.example.backintyne.ui.map;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -11,6 +12,7 @@ import android.graphics.RectF;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -43,11 +45,17 @@ public class InfoWindowCustom implements GoogleMap.InfoWindowAdapter {
     }
 
     @Override
-    public View getInfoWindow(Marker marker) {
+    public View getInfoWindow(final Marker marker) {
+        // If no associated site, do not create info window
+        if (marker.getTitle() == null) {
+            return null;
+        }
+
+        // Inflate info window layout
         LayoutInflater inflater = (LayoutInflater)
                 context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         assert inflater != null;
-        View view = inflater.inflate(R.layout.echo_info_window, null);
+        @SuppressLint("InflateParams") View view = inflater.inflate(R.layout.echo_info_window, null);
 
         // Find SiteEntry object
         SiteEntry entry = data.findEntryByName(marker.getTitle());
@@ -70,6 +78,7 @@ public class InfoWindowCustom implements GoogleMap.InfoWindowAdapter {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
         }
 
         return view;

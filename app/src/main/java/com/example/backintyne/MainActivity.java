@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     //change the apps colour scheme to its dark mode
     public void changeColourDM(View v){
         Window window = this.getWindow();
-        window.setStatusBarColor(getResources().getColor(R.color.black));
+        window.setStatusBarColor(getResources().getColor(R.color.darkPrimary));
         decorView.setBackgroundResource(R.color.dark); // set the background to dark gray
         actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.darkPrimary))); // change the support bar colour
     }
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
     //reset the colours to remove other colour schemes
     public void changeColourReset(View v){
         Window window = this.getWindow();
-        window.setStatusBarColor(getResources().getColor(R.color.black));
+        window.setStatusBarColor(getResources().getColor(R.color.darkPrimary));
         decorView.setBackgroundResource(R.color.colourBackground); // reset the background colour
         actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary))); // reset the support bar
     }
