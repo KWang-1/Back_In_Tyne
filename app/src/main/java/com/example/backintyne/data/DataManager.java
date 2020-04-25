@@ -129,16 +129,17 @@ public final class DataManager {
         parser.require(XmlPullParser.START_TAG, namespace, "entry");
 
         // Create temporary variables to hold entry siteData
-        String name = "";
-        String address = "";
-        String era = "";
-        String type = "";
-        String introduction = "";
-        String description = "";
-        String details = "";
-        String cost = "";
-        String facilities = "";
-        String publicTransport = "";
+        // Initialise to default
+        String name = "Name not available";
+        String address = "Address not available";
+        String era = "Null";
+        String type = "Filter";
+        String introduction = "No introduction available";
+        String description = "No description available";
+        String details = "No further details";
+        String cost = "Information about costs not available";
+        String facilities = "Information about facilities not available";
+        String publicTransport = "Information about public transport not available";
         List<ImageData> gallery = new ArrayList<>();
         double longitude = 0;
         double latitude = 0;
@@ -150,36 +151,47 @@ public final class DataManager {
             }
 
             // Find appropriate parse method, and assign to appropriate output
+            String result;
             switch (parser.getName()) {
                 case "name":
-                    name = readText(parser);
+                    result = readText(parser);
+                    if (result.length() > 0) name = result;
                     break;
                 case "address":
-                    address = readText(parser);
+                    result = readText(parser);
+                    if (result.length() > 0) address = result;
                     break;
                 case "type":
-                    type = readText(parser);
+                    result = readText(parser);
+                    if (result.length() > 0) type = result;
                     break;
                 case "era":
-                    era = readText(parser);
+                    result = readText(parser);
+                    if (result.length() > 0) era = result;
                     break;
                 case "introduction":
-                    introduction = readText(parser);
+                    result = readText(parser);
+                    if (result.length() > 0) introduction = result;
                     break;
                 case "description":
-                    description = readText(parser);
+                    result = readText(parser);
+                    if (result.length() > 0) description = result;
                     break;
                 case "details":
-                    details = readText(parser);
+                    result = readText(parser);
+                    if (result.length() > 0) details = result;
                     break;
                 case "cost":
-                    cost = readText(parser);
+                    result = readText(parser);
+                    if (result.length() > 0) cost = result;
                     break;
                 case "facilities":
-                    facilities = readText(parser);
+                    result = readText(parser);
+                    if (result.length() > 0) facilities = result;
                     break;
                 case "public_transport":
-                    publicTransport = readText(parser);
+                    result = readText(parser);
+                    if (result.length() > 0) publicTransport = result;
                     break;
                 case "gallery":
                     gallery = readGallery(parser);
@@ -285,6 +297,7 @@ public final class DataManager {
             result = parser.getText();
         }
         parser.next();
+        if (result == null) result = "";
         return result;
     }
 

@@ -36,7 +36,8 @@
     <!-- Search Fragment -->
 
     <string name="search_intro">This is a definitive list of sites this app has information on. Type a name of a site into the search bar, filter the search via the filter button, on scroll through the complete list below.</string>
-    <string name="search_bar_hint">search</string>
+    <string name="search_bar_hint">Search</string>
+    <string name="result_picture_description">Site picture</string>
     <string name="no_name">No name available</string>
     <string name="no_description">No description available</string>
 

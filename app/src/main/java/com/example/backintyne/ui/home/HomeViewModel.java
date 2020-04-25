@@ -71,7 +71,9 @@ public class HomeViewModel extends ViewModel {
 
     // For navigation using cycling cards
     SiteEntry getCurrentEntry() {
-        return dataManager.getSiteData().get(entryIndex - 1);
+        int dataSize = dataManager.getSiteData().size();
+        int currentIndex = ((entryIndex - 1) + dataSize) % dataSize;
+        return dataManager.getSiteData().get(currentIndex);
     }
 
     MutableLiveData<String> getCyclingCardsTitle() {

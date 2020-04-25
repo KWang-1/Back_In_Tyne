@@ -3,7 +3,7 @@ package com.example.backintyne.data;
 import java.util.List;
 
 /**
- * Represents an event organiser.
+ * Represents a modern event occurring at a historical site.
  */
 public class EventEntry {
 

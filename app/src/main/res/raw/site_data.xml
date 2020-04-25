@@ -1,728 +1,757 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--
+    Data file for historical sites.
+
+    README FOR EDITORS:
+    1. The text within each element will be displayed directly, therefore line breaks will be displayed in the app.
+    2. You can add extra non-root elements not defined in this template, as it won't break the parser, but can still be implemented if needed in the future.
+    3. The elements "era" and "type" will be used to categorise entries, therefore all entries of a categorical type must have the exact string for that type.
+    4. The order in which same elements under the same parent are entered matters, as that will be the order in which they will be displayed.
+    5. The order in which separate elements under the same parent are entered does not matter.
+
+    (No element indentation since directly affects presentation)
+-->
+
 <entries>
 
-    <entry>
-        <name>Lindisfarne Castle</name>
-        <address>Holy Island,
-		Berwick-Upon-Tweed,
-		Northumberland,
-		TD15 2SH</address>
-        <era>Medieval</era>
-        <type>Castle</type>
-		<introduction>An isolated castle on the remote Holy Island built from the stones of the destroyed monastery.  </introduction>
-        <description>In 1542, following Henry VIII’s dissolution of the monasteries a fort was ordered to be built near the recently closed Lindisfarne monastery. Many of the stones there today were originally part of the monastery.
-						Between 1570 and 1571, Elizabeth I updated and strengthened the defences, adding new gun platforms.  Following the ascension of James I and combination of the English and Scottish thrones the need for border castles declined .
-						In 1903, the architect Edward Lutyens refurbished the castle into a grand holiday home for the publishing magnate Edward Hudson.
-						</description>
-        <details>National Trust - Free for members
-					</details>
-        <cost>Adult - £7</cost>
-        <facilities>Toilets
-            Cafes
-            Pubs
-            Shops</facilities>
-        <public_transport>Parking on Holy Island car park,
-            Shuttle services runs between car park and castle
-            subject to tides
-            Take a train to Berwick Upon Tweed then take the x18 Max 18 stops south to Beal. Then walk across the causeway to Holy Island, tides permitting</public_transport>
-        <gallery>
-            <image>
-                <file_name>Lindisfarne1.jpg</file_name>
-                <attribution>Matthew Hunt</attribution>
-            </image>
-            <image>
-                <file_name>Lindisfarne2.jpg</file_name>
-                <attribution>Copyright Rick Crowley https://www.geograph.org.uk/photo/1143818</attribution>
-            </image>
-        </gallery>
-		<latitude>55.6713</latitude>
-		<longitude>-1.7844</longitude>
-    </entry>
+<entry>
+<name>Lindisfarne Castle</name>
+<address>Holy Island,
+Berwick-Upon-Tweed,
+Northumberland,
+TD15 2SH</address>
+<era>Medieval</era>
+<type>Castle</type>
+<introduction>An isolated castle on the remote Holy Island built from the stones of the destroyed monastery.</introduction>
+<description>In 1542, following Henry VIII’s dissolution of the monasteries a fort was ordered to be built near the recently closed Lindisfarne monastery. Many of the stones there today were originally part of the monastery.
 
-    <entry>
-        <name>Arbeia Fort</name>
-        <address>Arbeia Roman Fort,
-		Baring St,
-		South Shields
-		NE33 2BB</address>
-        <era>Roman</era>
-        <type>Fort</type>
-		<introduction>Serving as the main sea route to Hadrian’s wall this fort was a key military supply base for north Britanniae and derives its name from the Arabic, mesopotamian troops that it garrisoned. </introduction>
-        <description>Arbeia was a Roman fort built around 160AD. Standing above the entrance to the River Tyne, Arbeia Fort guarded the main sea route to Hadrian's Wall. It was a key garrison and military supply base to other forts along the Wall and is an important part of the history of Roman Britain.
-		The name Arbeia means "fort of the Arab troops", referring to the fact that part of its garrison at one time was a squadron of Mesopotamian boatmen from the Tigris.
-		Through the course of history Arbeia has had several guises; from the Roman Emperor's HQ for the Scottish invasion to a busy cosmopolitan port. It was a huge supply base for the Roman army, home to 600 Roman troops and is said to be the birth place of the Northumbrian King Oswin.
-		</description>
-        <details>
-        </details>
-        <cost>Free</cost>
-        <facilities>Limited wheelchair access
-            Dogs welcome
-            Guided tours
-            Toilet and baby change facilities
-            Popup cafe in summer
-            </facilities>
-        <public_transport>Yellow line southbound from monument station. Exit at South Sheilds, 10 minute walk</public_transport>
-        <gallery>
-            <image>
-                <file_name>Arbeia1.jpg</file_name>
-                <attribution>Chris Mckenna, 4 March 2005, https://en.wikipedia.org/wiki/Arbeia#/media/File:Arbeia_Roman_Fort_reconstructed_gateway.jpg</attribution>
-            </image>
-            <image>
-                <file_name>Arbeia2.jpg</file_name>
-                <attribution>Chris Mckenna, 2 march 2005, https://no.m.wikipedia.org/wiki/Fil:Arbeia_Roman_Fort_grannaries.jpg</attribution>
-            </image>
-        </gallery>
-		<latitude>55.0043</latitude>
-		<longitude>-1.4319</longitude>
-    </entry>
+Between 1570 and 1571, Elizabeth I updated and strengthened the defences, adding new gun platforms. Following the ascension of James I and combination of the English and Scottish thrones the need for border castles declined.
 
-    <entry>
-        <name>Flodden Field</name>
-        <address>Flodden Field,
-		A697,
-		Cornhill-on-Tweed,
-		TD12 4SN
-        </address>
-        <era>Tudor</era>
-        <type>Battlefield</type>
-		<introduction>The momentous site which, in 1513, saw the death of a Scottish King and a major turning point in the War of the League of Cambrai.  </introduction>
-        <description>On this site, on 9th September 1513 the battle of Flodden Field was fought between the Scottish and English thrones.
-		Following Henry VIII’s declaration of war with France, Scotland’s James IV launched a campaign to support their ally by distracting the English and invading the north. Henry’s veteran military commander Thomas Howard, Earl of Surrey fought and defeated the Scots, killing James and routing the Scottish force.
-		This battle cowed the Scots into submission and 90 years later the crowns of Scotland and England were unified.
-		</description>
-        <details>Signs and monuments main ‘spots’ to see
-				Gravel path around the battlefield
-        </details>
-        <cost>Free</cost>
-        <facilities>Car Park
+In 1903, the architect Edward Lutyens refurbished the castle into a grand holiday home for the publishing magnate Edward Hudson.</description>
+<details>National Trust - Free for members</details>
+<cost>Adult - £7</cost>
+<facilities>Toilets, cafes, pubs, shops</facilities>
+<public_transport>Parking on Holy Island car park,
+shuttle services runs between car park and castle,
+subject to tides.
+Take a train to Berwick Upon Tweed then take the x18 Max 18 stops south to Beal. Then walk across the causeway to Holy Island, tides permitting</public_transport>
+<gallery>
+<image>
+<file_name>Lindisfarne1.jpg</file_name>
+<attribution>Matthew Hunt</attribution>
+</image>
+<image>
+<file_name>Lindisfarne2.jpg</file_name>
+<attribution>Copyright Rick Crowley https://www.geograph.org.uk/photo/1143818</attribution>
+</image>
+</gallery>
+<latitude>55.6713</latitude>
+<longitude>-1.7844</longitude>
+</entry>
 
-        </facilities>
-        <public_transport>Nearest railway station to the Flodden Battlefield is Berwick-upon-Tweed
-            From Newcastle take the Number 67 Bus from Berwick Railway Station to Cornhill-on-Tweed runs approximately every 2 hours.
-            </public_transport>
-        <gallery>
-            <image>
-                <file_name>FloddenField1.jpg</file_name>
-                <attribution>Philip Hallin, June 2015,licensed for reuse under this Creative Commons Licence.
-                    https://www.geograph.org.uk/photo/4786264</attribution>
-            </image>
-            <image>
-                <file_name>FloddenField2.jpg</file_name>
-                <attribution>Peter Smith, December 2009
-                    https://www.flickr.com/photos/purpaboo/4266457701/</attribution>
-            </image>
-        </gallery>
-		<latitude>55.6261</latitude>
-		<longitude>-2.1766</longitude>
-    </entry>
-	
-	 <entry>
-			<name> Bamburgh Castle</name>
-			<address>Bamburgh Castle
-						Bamburgh
-						Northumberland
-						NE69 7DF
-						</address>
-			<era>Medieval</era>
-			<type>Castle</type>
-			<introduction>This castle’s history stretches as far back as the Celtic Britons.  This castle’s story is as rich and varied as England’s itself.</introduction>
-			<description>The initial structure of this site was a fort of the indigenous Celtic Britons known as Din Guarie and may have been the capital of the kingdom of Bernicia.
-							Following William the Conqueror's invasion in 1066 the Normans built a new castle on the site, which forms the core of the present one.
-							During the Wars of the Roses, Bamburgh was one of four castles held by the Lancastrians in the north. These four castles enabled the Lancastrians to secure control of the Eastern March ensuring they could seek support from Scotland and provide a secure landing place for foreign mercenaries. In 1464, following a nine month siege, it became the first castle in England to be defeated through the use of artillery.
-							In the second world war pillboxes were established in the sand dunes near the castle in fear of a Nazi invasion.
-							</description>
-			<details>Not part of English Heritage.
-						One of the largest inhabited castles in the country</details>
-			<cost>	ADULT   £11.25
-					CHILD   (AGED 5 – 18) £5.50</cost>
-			<facilities>Dog friendly
-						Two cafes on site and a bar
-			</facilities>
-			<public_transport>From Newcastle Monument, X15 Max to Alnwick Castle, then X18 Max  ~ 2 hrs
-			</public_transport>
-			<gallery>
-				<image>
-					<file_name>Bamburgh1.jpg</file_name>
-					<attribution> Michael Hanselmann CC BY-SA 3.0
-					https://en.wikipedia.org/wiki/Bamburgh_Castle#/media/File:Bamburgh_2006_closeup.jpg</attribution>
-				</image>
-				<image>
-					<file_name>Bamburgh2.jpg</file_name>
-					<attribution>Airwolfhound, August 2010
-					https://www.flickr.com/photos/24874528@N04/4929651973/</attribution>
-				</image>
-			</gallery>
-			<latitude>55.6092</latitude>
-			<longitude>-1.7091</longitude>
-		</entry>
-		
-		 <entry>
-				<name>Warkworth Castle</name>
-				<address>Warkworth Castle
-							Warkworth
-							Northumberland
-							NE65 0UJ
-							</address>
-				<era>Medieval</era>
-				<type>Castle</type>
-				<introduction>This striking cross shaped castle towers above the landscape. It has featured in Shakespear’s works and been a centrepiece to a number of Northern English conflicts.</introduction>
-				<description>A flimsy timber castle was the first structure upon this site, thought to be built during the reign of king Henry II.
-				The castle was probably laid out in its present form in about 1200 and was the favoured residence of the powerful Percy family from the 14th to the 17th centuries. As the Earls (and later Dukes) of Northumberland, they were among the greatest landowners in northern England.
-				In the Rising of the North the castle was captured by Catholic noble rebels. The castle always appears as a backdrop in Shakespeare’s Henry IV.
-				The details surrounding Warkworth Castle's role in the English Civil War are unclear, but the conflict resulted in further damage to the structure. Initially held by Royalist forces, the castle was still important enough that when the Scots invaded in 1644 they forced its surrender.
-				Fun fact
-				Nearby, on the banks of the river Coquet and accessible only by boat, are the remains of a chapel known as the hermitage, carved directly out of the cliff rock.
-				</description>
-				<details>Part of English Heritage, free for members
-				Hermitage half mile up the river
-				Shakespeare’s character in Henry IV ‘Harry Hotspur’ lived here (He was a real guy)
-				-Totenham Hotspurs named after him</details>
-				<cost>ADULT £8
-				CHILD £4.80
-				CONCESSION £7.20
-				FAMILY (2 adults up to 3 children) £20.80</cost>
-				<facilities>Parking 48 spaces - free for EH members
-				Vending machine
-				Picnic area
-				Toilets
-				Dog Friendly
-				Audio Tours</facilities>
-				<public_transport>Closest train station is Alnmouth
-				Bus links from Alnmouth roughly 10 minutes on X20 MAX
-				Alternatively direct from NCL on X20 MAX roughly 1.5 hrs</public_transport>
-				<gallery>
-					<image>
-						<file_name>Warkworth1.jpg</file_name>
-						<attribution>By AndrewMcQ at the English language Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4586821</attribution>
-					</image>
-					<image>
-						<file_name>Warkworth2.jpg</file_name>
-						<attribution>By xlibber at the English language Wikipedia, CC BY- 2.0,
-						https://commons.wikimedia.org/wiki/File:Warkworth_Castle_(5477023846).jpg</attribution>
-					</image>
-					<image>
-						<file_name>Warkworth3.jpg</file_name>
-						<attribution>The Hermitge)
-						By Amanda Slater, April 2017
-						https://www.flickr.com/photos/pikerslanefarm/34043631420</attribution>
-					</image>
-				</gallery>
-				<latitude>55.3449</latitude>
-				<longitude>-1.6137</longitude>
-			</entry>
-			
-			<entry>
-			<name>Chester Fort</name>
-			<address>Hadrian's Wall
-			Chollerford
-			Northumberland
-			NE46 4EU
-			</address>
-			<era>Roman</era>
-			<type>Fort</type>
-			<introduction>Guarding the bridge over the river Tyne this fort was a key location protecting Hadrian’s wall from barbarian raids from the north.</introduction>
-			<description>Chester’s is one of a series of permanent forts built during the construction of Hadrian’s Wall. The cavalry fort, known to the Romans as Cilurnum, was built in about AD 124.
-			The site guarded a bridge, Chester’s Bridge, carrying the Military Way Roman road behind the wall across the River North Tyne. Massive abutments survive of this bridge across the river from the fort. Cilurnum was a cavalry fort at its foundation, for retaliatory raids into barbarian areas north of the wall, then given over to infantry later. It was occupied until the Romans left Britain in the 5th century.
-			Pioneering excavations in the 19th century exposed the structures visible today. These excavations yielded one of the best collections of inscriptions and sculpture on Hadrian’s Wall.
-			</description>
-			<details>English Heritage - members go free</details>
-			<cost>ADULT £6.20
-			CHILD £5.60
-			CONCESSION £3.70
-			FAMILY (2 adults 3 kids) £16.10</cost>
-			<facilities>Toilets
-			Tea Room
-			60 Parking spaces + disabled spots
-			Parking free for EH members</facilities>
-			<public_transport>From Newcastle the closest station is Hexam. At Hexam take the 680 Tynedale links bus to the recreation ground in Chollerford</public_transport>
-			<gallery>
-				<image>
-					<file_name>ChesterFort1.jpg</file_name>
-					<attribution>Steven Fruitsmaak, 27 October 2007, https://en.wikipedia.org/wiki/File:Chesters_Roman_fort_barracks.jpg </attribution>
-				</image>
-				<image>
-					<file_name>ChesterFort2.jpg</file_name>
-					<attribution>Carole Raddato, 3 July 207, https://commons.wikimedia.org/wiki/File:The_Baths_located_outside_the_fort,_considered_as_the_best-preserved_Roman_military_building_in_Britain,_Chesters_Roman_Fort_%28Cilurnum%29,_Hadrian%27s_Wall_%2844705870592%29.jpg</attribution>
-				</image>
-			</gallery>
-			<latitude>55.0271</latitude>
-			<longitude>-2.1432</longitude>
-		</entry>
-		
-		<entry>
-        <name>Vindolanda Fort</name>
-        <address>Chesterholm Museum,
-		Bardon Mill,
-		 Northumberland,
-		 NE47 7JN
-		</address>
-        <era>Roman</era>
-        <type>Fort</type>
-		<introduction>Composing of nine forts as well as baths and a village this auxiliary fort complex predates the construction of Hadrian’s wall and guardes a crossing over the river Tyne.</introduction>
-        <description>Vindolanda was a roman auxiliary fort predating construction of Hadrian’s wall. Occupied between 85-370AD. The fort guarded the Stanegate, the Roman road from the River Tyne to the Solway Firth.
-		The site itself comprises nine forts built on top of each other. Soldiers from all over the Roman Empire, including Belgium, Germany and France were garrisoned here. The visible stone fort dates to the third century and the impressive remains include the fort walls, the headquarters building, the Commanding Officer’s house, granaries and barracks. Extensive remains of the extramural settlement lie just west of the fort with buildings lining a main street. These include houses, shops, a tavern and a bath house.
-		</description>
-        <details>On-site meuseum</details>
-        <cost>ADULT £8.00
-		CHILD £4.75
-		CONCESSION £7.60
-		FAMILY £19.00
-		</cost>
-        <facilities>Guide Dogs Permitted
-		Disabled Accessibility
-		On site parking
-		Guided Tours Available for Groups
-		Picnic Site</facilities>
-        <public_transport>Nearest station is Bardon Mill Station.
-		 AD122 bus runs through the summer.
-		40 minute walk from station to site</public_transport>
-				<gallery>
-            <image>
-                <file_name>Vindolanda1.jpg</file_name>
-                <attribution>Simon Robinson, 19 may 2007, https://en.wikipedia.org/wiki/Vindolanda#/media/File:Vindolanda_bathhouse_-_2007-05-19.jpg</attribution>
-            </image>
-            <image>
-                <file_name>Vindolanda2.jpg</file_name>
-                <attribution>Francis Bijl, 2 May 2007, https://en.wikipedia.org/wiki/Vindolanda#/media/File:Vindolanda.jpg</attribution>
-            </image>
-			<image>
-                <file_name>Vindolanda3.jpg</file_name>
-                <attribution>Vindolanda Trust, https://www.vindolanda.com/</attribution>
-            </image>
-        </gallery>
-		<latitude>54.9916</latitude>
-		<longitude>-2.3657</longitude>
-    </entry>
-	
-	<entry>
-        <name>Lindisfarne Priory</name>
-        <address>Holy Island,
-		Berwick-Upon-Tweed,
-		Northumberland,
-		TD15 2RX</address>
-        <era>Viking</era>
-        <type>Holy Site</type>
-		<introduction>Marking the beginning of the Viking Raids on England this Priory’s key location upon Holy Island led it to hold a rich story of British Catholic and Secular history.  </introduction>
-        <description>Lindisfarne Priory was founded by St Aidan in AD 635. The great Northumbrian holy man St Cuthbert, lived and died here in 670.
-		Lindisfarne was the site of the first ever Viking invasion of the British isles, in 793 signalling the beginning of the ‘Viking Age’. Following the collapse of the Northumbrian Kingdom in 875 the monks fled the island, taking the bones of St Cuthbert with them.  The priory was re-established by the Normans in 1093 when they built a castle on the island.
-		In 1536 the priory was disestablished following Henry VII’s break from the Catholic church in Rome. At this point many stones from the monastery were used to build the neighbouring Lindisfarne Castle.
-		</description>
-        <details>English Heritage site - free entry for members</details>
-        <cost>ADULT £8.00
-		CHILD £4.80
-		CONCESSION £7.20
-		FAMILY £20.80
-		</cost>
-		<facilities>Parking
-		Shop
-		Toilers
-		Dogs allowed
-		Museum</facilities>
-        <public_transport>From Newcaslte take a train to Berwick Upon Tweed then take the x18Max 18 stops south to Beal. Then walk across the causeway to Holy Island, tides permitting</public_transport>
-        <gallery>
-            <image>
-                <file_name>LindisfarnePriory1.jpg</file_name>
-                <attribution> Mstanyauk, 13 April 2011, https://commons.wikimedia.org/wiki/File:Lindisfarne_Priory_On_Holy_Island.jpg</attribution>
-            </image>
-            <image>
-                <file_name>LindisfarnePriory2.jpg</file_name>
-                <attribution>Dominic Hargreaves, 16 July 2009, https://www.flickr.com/photos/dominichargreaves/3812324733</attribution>
-            </image>
-        </gallery>
-		<latitude>55.6691</latitude>
-		<longitude>-1.8016</longitude>
-    </entry>
-	
-	<entry>
-        <name>Tynemouth Castle and Priory</name>
-        <address>Pier Road,
-		Tynemouth,
-		Tyne and Wear,
-		NE30 4BZ</address>
-        <era>Viking</era>
-        <type>Holy Site</type>
-		<introduction>Sitting at the mouth of the River Tyne this castle and priory served as a key defensive location in the defense of Britain in the second world war.</introduction>
-        <description>The priory was founded early in the 7th century.
-		Notably Oswin, King of Deria was buried there in 651.  In The Danes attacked the Priory in 800 the Priory was attacked by the Danish raiders, following a third attack in 865 the castle and priory were destroyed.
-		 In 1296 a stone wall was erected with a gatehouse and barbican added in 1390.  In 1312 King Edward II took refuge in this castle, an event dramatized in Christopher Marlowe’s Edward II where the castle is used as a backdrop in Act II.
-		At the end of the 19th century the castle became used as a barracks, in World War II the castle became part of the coastal defence installations covering the mouth of the river Tyne. A gun emplacement was built within the Priory precinct and can still be seen by visitors today.
-		</description>
-        <details>English Heritage site - free entry for members</details>
-        <cost>ADULT £7.00
-		CHILD £4.20
-		CONCESSION £6.30
-		FAMILY £18.20
-		</cost>
-        <facilities>Shop
-		Toilets
-		Gardens
-		Exhibition
-		</facilities>
-        <public_transport>From Newcastletake the Yellow line metro eastwards towards the coast. From Tynemouth station a 15 walk to the coast</public_transport>
-        <gallery>
-            <image>
-                <file_name>TynemouthCP1.jpg</file_name>
-                <attribution>Northumbrianimages, 26 June 2014, https://northumbrianimages.blogspot.com/2014/06/tynemouth-priory-and-castle.html</attribution>
-            </image>
-            <image>
-                <file_name>TynemouthCP2.jpg</file_name>
-                <attribution>Northumbrianimages, 26 June 2014, https://northumbrianimages.blogspot.com/2014/06/tynemouth-priory-and-castle.html</attribution>
-            </image>
-			<image>
-                <file_name>TynemouthCP3.jpg</file_name>
-                <attribution>Northumbrianimages, 26 June 2014, https://northumbrianimages.blogspot.com/2014/06/tynemouth-priory-and-castle.html</attribution>
-            </image>
-        </gallery>
-		<latitude>55.0184</latitude>
-		<longitude>-1.4166</longitude>
-    </entry>
-	
-	<entry>
-        <name>Battle of Alnwick</name>
-        <address>Off the BroomHouse Roundabout
-		Alnwick
-		Northumberland
-		NE66 2LB
-		</address>
-        <era>Medieval</era>
-        <type>Castle</type>
-		<introduction>Hidden away in a field within view of the dramatic Alnwick castle this field marked the end of a Scottish incursion in to England and the death of Malcolm III of Scotland.</introduction>
-        <description>Today only a gothic style cross remains to mark the location of the first battle of Alnwick.
-		In the late eleventh century Malcolm III sought to claim northern England for the Scottish Crown. With William II distracted by political events in Normandy, the Scottish King invaded but was ambushed and killed at the first Battle of Alnwick (1093) by an English force under Robert de Mowbray, Earl of Northumbria
-		</description>
-        <details>No signage,
-		only one monument remains</details>
-        <cost>Free
-		</cost>
-		<facilities>None
-		</facilities>
-        <public_transport>From Newcastle take a train north to Alnmouth station, fom Alnmouth take the X18/X20 towards Alnwick. From Alnwick it is a 20 minute walk from the castle to the old battlefield.</public_transport>
-        <gallery>
-            <image>
-                <file_name>bAlnwick1.jpg</file_name>
-                <attribution> James Lancaster / BattlefieldsofBritain.co.uk , http://www.battlefieldsofbritain.co.uk/assets/alnwick_castle.jpg</attribution>
-            </image>
-            <image>
-                <file_name>bAlnwick2.jpg</file_name>
-                <attribution>James Lancaster / BattlefieldsofBritain.co.uk , http://www.battlefieldsofbritain.co.uk/assets/alnwick_castle.jpg</attribution>
-            </image>
-        </gallery>
-		<latitude>55.4285</latitude>
-		<longitude>-1.6950</longitude>
-    </entry>
-	
-    <entry>
-        <name>Alnwick Castle</name>
-        <address>Alnwick Castle, Alnwick, Northumberland NE66 1NQ</address>
-        <era>Medeival</era>
-        <type>Castle</type>
-        <introduction>One of Britain’s largest inhabited castles, explore the centuries of history as well as Harry-Potter inspired events!</introduction>
-        <details>The second largest inhabited castle in the UK, Alnwick has served as a military
-outpost, a teaching college, a refuge for evacuees, a film set, and not least as a family home since construction began in 1096.
-The origins of Alnwick castle date back to the Norman period. Since 1309 its story has been
-intertwined with that of the Percy family, a family with a history as illustrious as the castle’s own.</details>
-        <cost>CHILD £7.95
-              ADULT £15.05</cost>
-        <facilities>Toilets, café, parking spaces and disabled spots</facilities>
-        <public_transport>From Newcastle bus station, take the X15 MAX for 43 stops. It's then a 7 minute walk to the site.</public_transport>
-        <gallery>
-            <image>
-                <file_name>AlnwickCastle1.jpg</file_name>
-                <attribution>Phill Thomas, 2 April 2009, https://commons.wikimedia.org/wiki/File:Alnwick_Castle_02.jpg</attribution>
-            </image>
-            <image>
-                <file_name>AlnwickCastle2.jpg</file_name>
-                <attribution>Len Williams, 28 May 2016 ,https://www.geograph.org.uk/photo/4993385</attribution>
-            </image>
-        </gallery>
-		<latitude>55.4156</latitude>
-		<longitude>-1.7050</longitude>
-    </entry>
+<entry>
+<name>Arbeia Fort</name>
+<address>Arbeia Roman Fort,
+Baring St,
+South Shields
+NE33 2BB</address>
+<era>Roman</era>
+<type>Fort</type>
+<introduction>Serving as the main sea route to Hadrian’s wall this fort was a key military supply base for north Britanniae.</introduction>
+<description>Arbeia was a Roman fort built around 160AD. Standing above the entrance to the River Tyne, Arbeia Fort guarded the main sea route to Hadrian's Wall. It was a key garrison and military supply base to other forts along the Wall and is an important part of the history of Roman Britain.
 
-    <entry>
-        <name>Battle Of Halidon Hill</name>
-        <address>Halidon Hill, Berwick-upon-Tweed TD15 1UE</address>
-        <era>Medeival</era>
-        <type>Battlefield</type>
-        <introduction>Visit the site of one of the bloodiest battles of the Second War of Scottish independence, stand on the rocky terrain that saw King Edward III first victory in battle.</introduction>
-        <details>The Battle of Halidon Hill (19 July 1333) was fought during the Second War of Scottish Independence. Scottish forces under Sir Archibald Douglaswere heavily defeated by the English forces of King Edward III of England on unfavourable terrain while trying to relieve Berwick-upon-Tweed.
-It was King Edward III first battle,it is said that he learnt many tactics which he later used against French forces in the battles of Crey and Poiters.</details>
-        <cost>FREE</cost>
-        <facilities></facilities>
-        <public_transport>From Newcastle Central Station, take a train towards Edinburgh for 2 stops, then take the bus 60 for 6 stops, it is then a 5 minute walk to the site.</public_transport>
-        <gallery>
-            <image>
-                <file_name>BattleOfHalidonHill1.jpg</file_name>
-                <attribution>Barbara Carr, 24 May 2013, https://www.geograph.org.uk/photo/3474281</attribution>
-            </image>
-            <image>
-                <file_name>BattleOfHalidonHill2.jpg</file_name>
-                <attribution>Mat Fascoine, 3 May 2018, https://www.geograph.org.uk/photo/5858274</attribution>
-            </image>
-        </gallery>
-		<latitude>55.7878</latitude>
-		<longitude>-2.0635</longitude>
-    </entry>
+The name Arbeia means "fort of the Arab troops", referring to the fact that part of its garrison at one time was a squadron of Mesopotamian boatmen from the Tigris.
 
-    <entry>
-        <name>Battle of Humbleton Hill</name>
-        <address>Wooler, Northumberland</address>
-        <era>Medeival</era>
-        <type>Battlefield</type>
-        <introduction>Visit a battleground so note-worthy Shakespeare himself wrote about it. Walk to the famous bronze battlestone and take in the breathtaking scenes of Northumberland.</introduction>
-        <details>The battle of Humbleton Hill was a conflict between English and Scottish armies on 14 September 1402 near Wooler in Northumberland.
-The battle was mentioned by Shakespeare in Henry IV Pt1. The Bendor or ‘Battle stone’  which has traditionally marked the spot of conflict is made of bronze</details>
-        <cost>FREE</cost>
-        <facilities></facilities>
-        <public_transport>From Newcastle Central Station, take a train towards Edinburgh for 2 stops, take the 267 bus for 25 stops and then it is a 15 minute walk to the site.</public_transport>
-        <gallery>
-            <image>
-                <file_name>BattleOfHumbletonHill1.jpeg</file_name>
-                <attribution>Peter Mattock, 2000, https://en.wikipedia.org/wiki/File:BendorStoneHomildon.jpg</attribution>
-            </image>
-            <image>
-                <file_name>BattleOfHumbletonHill2.jpeg</file_name>
-                <attribution>Andrew Curtis, 25 September 2009, https://www.geograph.org.uk/photo/1509255</attribution>
-            </image>
-        </gallery>
-		<latitude>55.5562</latitude>
-		<longitude>-2.0474</longitude>
-    </entry>
+Through the course of history Arbeia has had several guises; from the Roman Emperor's HQ for the Scottish invasion to a busy cosmopolitan port. It was a huge supply base for the Roman army, home to 600 Roman troops and is said to be the birth place of the Northumbrian King Oswin.</description>
+<cost>Free</cost>
+<facilities>Limited wheelchair access
+Dogs welcome
+Guided tours
+Toilet and baby change facilities
+Popup cafe in summer</facilities>
+<public_transport>Yellow line southbound from monument station. Exit at South Sheilds, 10 minute walk</public_transport>
+<gallery>
+<image>
+<file_name>Arbeia1.jpg</file_name>
+<attribution>Chris Mckenna, 4 March 2005, https://en.wikipedia.org/wiki/Arbeia#/media/File:Arbeia_Roman_Fort_reconstructed_gateway.jpg</attribution>
+</image>
+<image>
+<file_name>Arbeia2.jpg</file_name>
+<attribution>Chris Mckenna, 2 march 2005, https://no.m.wikipedia.org/wiki/Fil:Arbeia_Roman_Fort_grannaries.jpg</attribution>
+</image>
+</gallery>
+<latitude>55.0043</latitude>
+<longitude>-1.4319</longitude>
+</entry>
 
-    <entry>
-        <name>Berwick Castle</name>
-        <address>Berwick-upon-Tweed, Northumberland, TD15 1DF</address>
-        <era>Medeival</era>
-        <type>Castle</type>
-        <introduction>See what remains of a medieval castle crucial to Anglo-Scottish warfare, superseded by the most complete and breathtakingly impressive bastioned town defences in England.</introduction>
-        <details>The remains of a medieval castle crucial to Anglo-Scottish warfare, superseded by the most complete and breathtakingly impressive bastioned town defences in England, mainly Elizabethan but updated in the 17th and 18th centuries.
-One of the access points onto the Ramparts is at Berwick-Upon-Tweed Barracks. Among the first barracks to be purpose built in England, they now house several historic exhibitions and in the summer host contemporary art installations in the Gymnasium Art Gallery.</details>
-        <cost>FREE</cost>
-        <facilities>Toilets, shop selling drinks and snacks, disabled access to ramparts</facilities>
-        <public_transport>From Newcastle Central Station, take a train towards Edinburgh for 2 stops, the site is a one minute walk away.</public_transport>
-        <gallery>
-            <image>
-                <file_name>BerwickCastle1.jpg</file_name>
-                <attribution>Euan Nelson, 17 April 2008, https://www.geograph.org.uk/photo/768511</attribution>
-            </image>
-            <image>
-                <file_name>BerwickCastle2.jpg</file_name>
-                <attribution>Rosser1954, 9 November 2017, https://commons.wikimedia.org/wiki/File:Berwick_Castle_%27Breakneck_Path%27_and_wall,_Berwick-upon-Tweed,_Northumbria.jpg</attribution>
-            </image>
-        </gallery>
-		<latitude>55.7713</latitude>
-		<longitude>-2.0012</longitude>
-    </entry>
+<entry>
+<name>Flodden Field</name>
+<address>Flodden Field,
+A697,
+Cornhill-on-Tweed,
+TD12 4SN</address>
+<era>Tudor</era>
+<type>Battlefield</type>
+<introduction>The momentous site which, in 1513, saw the death of a Scottish King and a major turning point in the War of the League of Cambrai.</introduction>
+<description>On this site, on 9th September 1513 the battle of Flodden Field was fought between the Scottish and English thrones.
 
-    <entry>
-        <name>Etal Castle</name>
-        <address>Cornhill on Tweed, Northumberland, TD12 4TN</address>
-        <era>Medeival</era>
-        <type>Castle</type>
-        <introduction>See where James IV’s invading Scots army slept, just prior to their crushing defeat at the Battle of Flodden. Although the castle remains are in ruin, an impressive central keep still stands.</introduction>
-        <details>Ruins of a 14th century castle. Built by Robert Manners in the mid-14th century, the castle guards a strategic crossing of the River Till. Primarily constructed as a dwelling house, its location in the troubled England - Scotland border region meant that shortly after building it was fortified and strengthened. The castle fell to James IV’s invading Scots army in 1513, just prior to their crushing defeat at the Battle of Flodden. The remains of the impressive central keep still stand.</details>
-        <cost>ADULT £5.70
-              CHILD £3.40
-              FAMILY £14.80</cost>
-        <facilities>parking, food/drink, shops, toilets, family friendly</facilities>
-        <public_transport>From Newcastle Central Station, take a train towards Edinburgh for 2 stops, then take the 267 bus for 15 stops, the site is a 3 minute walk from the bus stop.</public_transport>
-        <gallery>
-            <image>
-                <file_name>EtalCastle1.jpg</file_name>
-                <attribution>G Laird, 20 April 2017, https://www.geograph.org.uk/photo/5359404</attribution>
-            </image>
-            <image>
-                <file_name>EtalCastle2.jpg</file_name>
-                <attribution>David Robinson, 27 May 2009, https://www.geograph.org.uk/photo/2525617</attribution>
-            </image>
-        </gallery>
-		<latitude>55.6438</latitude>
-		<longitude>-2.1178</longitude>
-    </entry>
+Following Henry VIII’s declaration of war with France, Scotland’s James IV launched a campaign to support their ally by distracting the English and invading the north. Henry’s veteran military commander Thomas Howard, Earl of Surrey fought and defeated the Scots, killing James and routing the Scottish force.
 
-    <entry>
-        <name>Carvoran Fort</name>
-        <address>Carvoran, NE19 2RJ</address>
-        <era>Roman</era>
-        <type>Fort</type>
-        <introduction>See Magna in all its glory, step back in time and visit  one of the defences associated with Hadrian’s Wall and vital to the defense of the northern frontier of the Roman Empire.</introduction>
-        <details>Originally built to protect the junction between the Stanegate Road and Maiden Way, Carvoran Roman Fort (known as Magna) later became part of the defences associated with Hadrian’s Wall and the northern frontier of the Roman Empire.</details>
-        <cost>FREE</cost>
-        <facilities>on-site car parking, close to roman army museum</facilities>
-        <public_transport></public_transport>
-        <gallery>
-            <image>
-                <file_name>CarvoranFort1.jpg</file_name>
-                <attribution>Mike Quinn, 22 April 2009, https://commons.wikimedia.org/wiki/File:Carvoran_(Magna)_Roman_Fort_-_tower_at_northwest_corner_-_geograph.org.uk_-_1374195.jpg</attribution>
-            </image>
-            <image>
-                <file_name>CarvoranFort2.jpg</file_name>
-                <attribution>Mike Quinn, 22 April 2009, https://commons.wikimedia.org/wiki/File:Carvoran_(Magna)_Roman_Fort_-_tower_at_northwest_corner_(2)_-_geograph.org.uk_-_1374211.jpg</attribution>
-            </image>
-        </gallery>
-		<latitude>55.1918</latitude>
-		<longitude>-2.0702</longitude>
-    </entry>
+This battle cowed the Scots into submission and 90 years later the crowns of Scotland and England were unified.</description>
+<details>Signs and monuments main ‘spots’ to see
+Gravel path around the battlefield</details>
+<cost>Free</cost>
+<facilities>Car Park</facilities>
+<public_transport>Nearest railway station to the Flodden Battlefield is Berwick-upon-Tweed
+From Newcastle take the Number 67 Bus from Berwick Railway Station to Cornhill-on-Tweed runs approximately every 2 hours.</public_transport>
+<gallery>
+<image>
+<file_name>FloddenField1.jpg</file_name>
+<attribution>Philip Hallin, June 2015,licensed for reuse under this Creative Commons Licence.
+https://www.geograph.org.uk/photo/4786264</attribution>
+</image>
+<image>
+<file_name>FloddenField2.jpg</file_name>
+<attribution>Peter Smith, December 2009
+https://www.flickr.com/photos/purpaboo/4266457701/</attribution>
+</image>
+</gallery>
+<latitude>55.6261</latitude>
+<longitude>-2.1766</longitude>
+</entry>
 
-    <entry>
-        <name>Bellister Castle</name>
-        <address>Bellister Castle, Haltwhistle, Northumberland, NE49 0HZ</address>
-        <era>Medeival</era>
-        <type>Castle</type>
-        <introduction>Visit the remains of a 19th century mansion house attached to the ruins of a 14th century tower house which stands on an earlier motte and bailey castle.</introduction>
-        <details>Remains of a 19th century mansion house attached to the ruins of a 14th century tower house. This ruined castellated 19th century mansion house and remains of a 14th century tower house stand on what may have been an earlier motte and bailey castle.
-The mansion house suffered serious fire damage in 1901, whilst the older remains were
-allowed to fall into decay.</details>
-        <cost>FREE</cost>
-        <facilities>car park</facilities>
-        <public_transport>From Newcastle Central Station take a train towards Carlisle for 4 stops, then take the 681 bus for 5 stops directly to the castle.</public_transport>
-        <gallery>
-            <image>
-                <file_name>BellisterCastle1.jpg</file_name>
-                <attribution>Anthony Parkes, 20 jUNE 2011, https://en.m.wikipedia.org/wiki/File:Bellister_Castle_-_geograph.org.uk_-_2765227.jpg</attribution>
-            </image>
-            <image>
-                <file_name>BellisterCastle2.jpg</file_name>
-                <attribution>Andrew Curtis, 13 July 2018, https://www.geograph.org.uk/photo/5841008</attribution>
-            </image>
-        </gallery>
-		<latitude>54.9603</latitude>
-		<longitude>-2.4688</longitude>
-    </entry>
+<entry>
+<name>Bamburgh Castle</name>
+<address>Bamburgh Castle
+Bamburgh
+Northumberland
+NE69 7DF</address>
+<era>Medieval</era>
+<type>Castle</type>
+<introduction>This castle’s history stretches as far back as the Celtic Britons. This castle’s story is as rich and varied as England’s itself.</introduction>
+<description>The initial structure of this site was a fort of the indigenous Celtic Britons known as Din Guarie and may have been the capital of the kingdom of Bernicia.
 
-    <entry>
-        <name>Aydon Castle</name>
-        <address>Off Aydon Road, Corbridge, Northumberland, NE45 5PJ</address>
-        <era>Medeival</era>
-        <type>Castle</type>
-        <introduction>Set in a beautiful and secluded Northumberland woodland, visit an almost completely intact, unaltered 13th century English manor house,originally built as an undefended residence, but was almost immediately fortified on the outbreak of Anglo-Scottish warfare.</introduction>
-        <details>Almost completely intact, it is one of the finest and most unaltered examples of a 13th century English manor house. Set in a beautiful and secluded Northumberland woodland, it was originally built as an undefended residence, but was almost immediately fortified on the outbreak of Anglo-Scottish warfare.
-Nevertheless it was pillaged and burnt by the Scots in 1315, seized by English rebels two years later, and again occupied by Scots in 1346. The castle later became a farmhouse in the 17th century and was lived in up until 1966.</details>
-        <cost>ADULT £5.70
-              CHILD £3.40
-              FAMILY £14.80</cost>
-        <facilities>on-site parking, tea room, picnic area, shop, toilets, dog friendly, gardens</facilities>
-        <public_transport></public_transport>
-        <gallery>
-            <image>
-                <file_name>AydonCastle1.jpg</file_name>
-                <attribution>Mike Quinn, 11 June 2007, https://en.wikipedia.org/wiki/File:Aydon_Castle_2.jpg</attribution>
-            </image>
-            <image>
-                <file_name>AydonCastle2.jpg</file_name>
-                <attribution>Hadrianus1959, 14 June 2009, https://commons.wikimedia.org/wiki/File:Aydon_Castle_(inner_court).jpg</attribution>
-            </image>
-        </gallery>
-		<latitude>54.9916</latitude>
-		<longitude>-2.0030</longitude>
-    </entry>
+Following William the Conqueror's invasion in 1066 the Normans built a new castle on the site, which forms the core of the present one.
 
-    <entry>
-        <name>Prudhoe Castle</name>
-        <address>Castle View, Ovingham, Prudhoe NE42 6NA</address>
-        <era>Medeival</era>
-        <type>Castle</type>
-        <introduction>See just how strong the defences of the only Northumberland castle to resist the Scots, really are! Visit the home of the famous Percy family.</introduction>
-        <details>Built as part of a series of Norman Castles along the Tyne after the 1066 Norman conquest, Prudhoe was continuously occupied for over nine centuries. It was originally the home of the Umfravilles but was eventually taken over by the famous Percy family who restored it.
-Prudhoe survived two sieges during the 1170s and was the only Northumberland castle to resist the Scots.</details>
-        <cost>ADULT £5.90
-              CHILD £3.50
-              FAMILY £15.30</cost>
-        <facilities>on-site parking, tea room, picnic area, shop, toilets, exhibitions, gardens</facilities>
-        <public_transport>From Newcastle Central Station take a train towards Carlisle for 2 stops, the site is a 9 minute walk from the station.</public_transport>
-        <gallery>
-            <image>
-                <file_name>PrudhoeCastle1.jpg</file_name>
-                <attribution>Andrew Curtis, 13 September 2019, https://www.geograph.org.uk/photo/6265365</attribution>
-            </image>
-            <image>
-                <file_name>PrudhoeCastle2.jpg</file_name>
-                <attribution>Chris Tweedy, 8 August 2005, https://www.geograph.org.uk/photo/93654</attribution>
-            </image>
-        </gallery>
-		<latitude>54.9653</latitude>
-		<longitude>-1.8586</longitude>
-    </entry>
+During the Wars of the Roses, Bamburgh was one of four castles held by the Lancastrians in the north. These four castles enabled the Lancastrians to secure control of the Eastern March ensuring they could seek support from Scotland and provide a secure landing place for foreign mercenaries. In 1464, following a nine month siege, it became the first castle in England to be defeated through the use of artillery.
 
-    <entry>
-        <name>Belsay Castle</name>
-        <address>Belsay, Near Morpeth, Northumberland, NE20 0DX</address>
-        <era>Medeival</era>
-        <type>Castle</type>
-        <introduction>See the remains of a medieval castle,substantial in size, the three story rectangular pele tower with turrets and battlements was constructed around 1370.</introduction>
-        <details>Remains of a medieval castle. This substantial, three story rectangular pele tower with turrets and battlements was constructed around 1370.
- Home to the Middleton family, a new manor house was added to the tower in 1614. The castle was abandoned by the family in the early 19th century.</details>
-        <cost>ADULT £10.00
-              CHILD £6.00
-              FAMILY £26.00</cost>
-        <facilities>free parking, café, picnic area, shop, toilets, dog friendly, exhibitions, gardens</facilities>
-        <public_transport>From Newcastle bus station(Eldon Square) take the 131 bus for 13 stops, the site is then a 20 minute walk from the bus stop.</public_transport>
-        <gallery>
-            <image>
-                <file_name>BelsayCastle1.jpg</file_name>
-                <attribution>Mike Quinn, 19 June 2009, https://www.geograph.org.uk/photo/1479397</attribution>
-            </image>
-            <image>
-                <file_name>BelsayCastle2.jpg</file_name>
-                <attribution>Chris Gunns, 1 August 2008, https://commons.wikimedia.org/wiki/File:Belsay_Castle_-_geograph.org.uk_-_968969.jpg</attribution>
-            </image>
-        </gallery>
-		<latitude>55.0973</latitude>
-		<longitude>-1.8535</longitude>
-    </entry>
+In the second world war pillboxes were established in the sand dunes near the castle in fear of a Nazi invasion.</description>
+<details>Not part of English Heritage.
+One of the largest inhabited castles in the country</details>
+<cost>ADULT £11.25
+CHILD (AGED 5 – 18) £5.50</cost>
+<facilities>Dog friendly
+Two cafes on site and a bar</facilities>
+<public_transport>From Newcastle Monument, X15 Max to Alnwick Castle, then X18 Max ~ 2 hrs</public_transport>
+<gallery>
+<image>
+<file_name>Bamburgh1.jpg</file_name>
+<attribution>Michael Hanselmann CC BY-SA 3.0
+https://en.wikipedia.org/wiki/Bamburgh_Castle#/media/File:Bamburgh_2006_closeup.jpg</attribution>
+</image>
+<image>
+<file_name>Bamburgh2.jpg</file_name>
+<attribution>Airwolfhound, August 2010
+https://www.flickr.com/photos/24874528@N04/4929651973/</attribution>
+</image>
+</gallery>
+<latitude>55.6092</latitude>
+<longitude>-1.7091</longitude>
+</entry>
 
-    <entry>
-        <name>Morpeth Castle</name>
-        <address>Sanderson Arcade, Morpeth NE61 1NS</address>
-        <era>Medeival</era>
-        <type>Castle</type>
-        <introduction>Visit the first Norman motte and bailey castle in Morpeth was built in the 11th century, in an attempt to control England’s northern borders. The majestic castle was held for Parliament for 20 days against 2,700 Royalists by a garrison of 500 Lowland Scots.</introduction>
-        <details>Remains of 14th century castle and restored gatehouse. The first Norman motte and bailey castle in Morpeth was built in the 11th century, in an attempt to control England’s northern borders.
-That early structure was demolished in 1215, and a second castle was built on the same site in the early 14th century. The one great military event in the castle’s history appears to have been in 1644, when a garrison of 500 Lowland Scots held it for Parliament for 20 days against 2,700 Royalists. Today, sections of the curtain wall remain intact as well as the restored gatehouse.</details>
-        <cost>FREE</cost>
-        <facilities>car parking</facilities>
-        <public_transport>From Newcastle bus station (Haymarket) take the X14 MAX for 12 stops, the castle is then a 3 minute walk from the bus stop.</public_transport>
-        <gallery>
-            <image>
-                <file_name>MorpethCastle1.jpg</file_name>
-                <attribution>C G Burke, 21 August 2006, https://commons.wikimedia.org/wiki/File:Morpeth_Castle_Gatehouse.jpg</attribution>
-            </image>
-            <image>
-                <file_name>MorpethCastle2.jpg</file_name>
-                <attribution>Hadrianus1959, 21 February 2018, https://commons.wikimedia.org/wiki/File:Morpeth_Castle_(gatehouse).jpg</attribution>
-            </image>
-        </gallery>
-		<latitude>55.1682</latitude>
-		<longitude>-1.6891</longitude>
-    </entry>
+<entry>
+<name>Warkworth Castle</name>
+<address>Warkworth Castle
+Warkworth
+Northumberland
+NE65 0UJ</address>
+<era>Medieval</era>
+<type>Castle</type>
+<introduction>This striking cross shaped castle towers above the landscape. It has featured in Shakespeare’s works and been a centrepiece to a number of conflicts.</introduction>
+<description>A flimsy timber castle was the first structure upon this site, thought to be built during the reign of king Henry II.
 
-    <entry>
-        <name>Chillingham Castle</name>
-        <address>Chillingham, Alnwick NE66 5NJ</address>
-        <era>Medeival</era>
-        <type>Castle</type>
-        <introduction>See the 12th century monastery turned medieval castle, which has been home to the Grey family and their descendants since 1246.</introduction>
-        <details>Intact medieval castle. Built in the 12th century as a monastery, Chillingham has been home to the Grey family and their descendants since 1246.
+The castle was probably laid out in its present form in about 1200 and was the favoured residence of the powerful Percy family from the 14th to the 17th centuries. As the Earls (and later Dukes) of Northumberland, they were among the greatest landowners in northern England.
+
+In the Rising of the North the castle was captured by Catholic noble rebels. The castle always appears as a backdrop in Shakespeare’s Henry IV.
+
+The details surrounding Warkworth Castle's role in the English Civil War are unclear, but the conflict resulted in further damage to the structure. Initially held by Royalist forces, the castle was still important enough that when the Scots invaded in 1644 they forced its surrender.
+
+Fun fact:
+Nearby, on the banks of the river Coquet and accessible only by boat, are the remains of a chapel known as the hermitage, carved directly out of the cliff rock.</description>
+<details>Part of English Heritage, free for members
+Hermitage half mile up the river
+Shakespeare’s character in Henry IV ‘Harry Hotspur’ lived here (He was a real guy)
+-Totenham Hotspurs named after him</details>
+<cost>ADULT £8
+CHILD £4.80
+CONCESSION £7.20
+FAMILY (2 adults up to 3 children) £20.80</cost>
+<facilities>Parking 48 spaces - free for EH members
+Vending machine
+Picnic area
+Toilets
+Dog Friendly
+Audio Tours</facilities>
+<public_transport>Closest train station is Alnmouth
+Bus links from Alnmouth roughly 10 minutes on X20 MAX
+Alternatively direct from NCL on X20 MAX roughly 1.5 hrs</public_transport>
+<gallery>
+<image>
+<file_name>Warkworth1.jpg</file_name>
+<attribution>By AndrewMcQ at the English language Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4586821</attribution>
+</image>
+<image>
+<file_name>Warkworth2.jpg</file_name>
+<attribution>By xlibber at the English language Wikipedia, CC BY- 2.0,
+https://commons.wikimedia.org/wiki/File:Warkworth_Castle_(5477023846).jpg</attribution>
+</image>
+<image>
+<file_name>Warkworth3.jpg</file_name>
+<attribution>The Hermitge)
+By Amanda Slater, April 2017
+https://www.flickr.com/photos/pikerslanefarm/34043631420</attribution>
+</image>
+</gallery>
+<latitude>55.3449</latitude>
+<longitude>-1.6137</longitude>
+</entry>
+
+<entry>
+<name>Chester Fort</name>
+<address>Hadrian's Wall
+Chollerford
+Northumberland
+NE46 4EU</address>
+<era>Roman</era>
+<type>Fort</type>
+<introduction>Guarding the bridge over the river Tyne this fort was a key location protecting Hadrian’s wall from barbarian raids from the north.</introduction>
+<description>Chester’s is one of a series of permanent forts built during the construction of Hadrian’s Wall. The cavalry fort, known to the Romans as Cilurnum, was built in about AD 124.
+
+The site guarded a bridge, Chester’s Bridge, carrying the Military Way Roman road behind the wall across the River North Tyne. Massive abutments survive of this bridge across the river from the fort. Cilurnum was a cavalry fort at its foundation, for retaliatory raids into barbarian areas north of the wall, then given over to infantry later. It was occupied until the Romans left Britain in the 5th century.
+
+Pioneering excavations in the 19th century exposed the structures visible today. These excavations yielded one of the best collections of inscriptions and sculpture on Hadrian’s Wall.</description>
+<details>English Heritage - members go free</details>
+<cost>ADULT £6.20
+CHILD £5.60
+CONCESSION £3.70
+FAMILY (2 adults 3 kids) £16.10</cost>
+<facilities>Toilets
+Tea Room
+60 Parking spaces + disabled spots
+Parking free for EH members</facilities>
+<public_transport>From Newcastle the closest station is Hexam. At Hexam take the 680 Tynedale links bus to the recreation ground in Chollerford</public_transport>
+<gallery>
+<image>
+<file_name>ChesterFort1.jpg</file_name>
+<attribution>Steven Fruitsmaak, 27 October 2007, https://en.wikipedia.org/wiki/File:Chesters_Roman_fort_barracks.jpg</attribution>
+</image>
+<image>
+<file_name>ChesterFort2.jpg</file_name>
+<attribution>Carole Raddato, 3 July 207, https://commons.wikimedia.org/wiki/File:The_Baths_located_outside_the_fort,_considered_as_the_best-preserved_Roman_military_building_in_Britain,_Chesters_Roman_Fort_%28Cilurnum%29,_Hadrian%27s_Wall_%2844705870592%29.jpg</attribution>
+</image>
+</gallery>
+<latitude>55.0271</latitude>
+<longitude>-2.1432</longitude>
+</entry>
+
+<entry>
+<name>Vindolanda Fort</name>
+<address>Chesterholm Museum,
+Bardon Mill,
+Northumberland,
+NE47 7JN</address>
+<era>Roman</era>
+<type>Fort</type>
+<introduction>Composing of nine forts as well as baths and a village this auxiliary fort complex predates the construction of Hadrian’s wall.</introduction>
+<description>Vindolanda was a roman auxiliary fort predating construction of Hadrian’s wall. Occupied between 85-370AD. The fort guarded the Stanegate, the Roman road from the River Tyne to the Solway Firth.
+
+The site itself comprises nine forts built on top of each other. Soldiers from all over the Roman Empire, including Belgium, Germany and France were garrisoned here.
+
+The visible stone fort dates to the third century and the impressive remains include the fort walls, the headquarters building, the Commanding Officer’s house, granaries and barracks.
+
+Extensive remains of the extramural settlement lie just west of the fort with buildings lining a main street. These include houses, shops, a tavern and a bath house.</description>
+<details>On-site museum</details>
+<cost>ADULT £8.00
+CHILD £4.75
+CONCESSION £7.60
+FAMILY £19.00</cost>
+<facilities>Guide Dogs Permitted
+Disabled Accessibility
+On site parking
+Guided Tours Available for Groups
+Picnic Site</facilities>
+<public_transport>Nearest station is Bardon Mill Station.
+AD122 bus runs through the summer.
+40 minute walk from station to site</public_transport>
+<gallery>
+<image>
+<file_name>Vindolanda1.jpg</file_name>
+<attribution>Simon Robinson, 19 may 2007, https://en.wikipedia.org/wiki/Vindolanda#/media/File:Vindolanda_bathhouse_-_2007-05-19.jpg</attribution>
+</image>
+<image>
+<file_name>Vindolanda2.jpg</file_name>
+<attribution>Francis Bijl, 2 May 2007, https://en.wikipedia.org/wiki/Vindolanda#/media/File:Vindolanda.jpg</attribution>
+</image>
+<image>
+<file_name>Vindolanda3.jpg</file_name>
+<attribution>Vindolanda Trust, https://www.vindolanda.com/</attribution>
+</image>
+</gallery>
+<latitude>54.9916</latitude>
+<longitude>-2.3657</longitude>
+</entry>
+
+<entry>
+<name>Lindisfarne Priory</name>
+<address>Holy Island,
+Berwick-Upon-Tweed,
+Northumberland,
+TD15 2RX</address>
+<era>Viking</era>
+<type>Holy Site</type>
+<introduction>Marking the beginning of the Viking Raids on England this Priory’s key location led it to hold a rich story of British Catholic and Secular history.</introduction>
+<description>Lindisfarne Priory was founded by St Aidan in AD 635. The great Northumbrian holy man St Cuthbert, lived and died here in 670.
+
+Lindisfarne was the site of the first ever Viking invasion of the British isles, in 793 signalling the beginning of the ‘Viking Age’. Following the collapse of the Northumbrian Kingdom in 875 the monks fled the island, taking the bones of St Cuthbert with them. The priory was re-established by the Normans in 1093 when they built a castle on the island.
+
+In 1536 the priory was disestablished following Henry VII’s break from the Catholic church in Rome. At this point many stones from the monastery were used to build the neighbouring Lindisfarne Castle.</description>
+<details>English Heritage site - free entry for members</details>
+<cost>ADULT £8.00
+CHILD £4.80
+CONCESSION £7.20
+FAMILY £20.80
+</cost>
+<facilities>Parking
+Shop
+Toilers
+Dogs allowed
+Museum</facilities>
+<public_transport>From Newcaslte take a train to Berwick Upon Tweed then take the x18Max 18 stops south to Beal. Then walk across the causeway to Holy Island, tides permitting</public_transport>
+<gallery>
+<image>
+<file_name>LindisfarnePriory1.jpg</file_name>
+<attribution>Mstanyauk, 13 April 2011, https://commons.wikimedia.org/wiki/File:Lindisfarne_Priory_On_Holy_Island.jpg</attribution>
+</image>
+<image>
+<file_name>LindisfarnePriory2.jpg</file_name>
+<attribution>Dominic Hargreaves, 16 July 2009, https://www.flickr.com/photos/dominichargreaves/3812324733</attribution>
+</image>
+</gallery>
+<latitude>55.6691</latitude>
+<longitude>-1.8016</longitude>
+</entry>
+
+<entry>
+<name>Tynemouth Castle and Priory</name>
+<address>Pier Road,
+Tynemouth,
+Tyne and Wear,
+NE30 4BZ</address>
+<era>Viking</era>
+<type>Holy Site</type>
+<introduction>Sitting at the mouth of the River Tyne this castle and priory served as a key defensive location in the defense of Britain in the second world war.</introduction>
+<description>The priory was founded early in the 7th century.
+
+Notably Oswin, King of Deria was buried there in 651. In The Danes attacked the Priory in 800 the Priory was attacked by the Danish raiders, following a third attack in 865 the castle and priory were destroyed.
+
+In 1296 a stone wall was erected with a gatehouse and barbican added in 1390. In 1312 King Edward II took refuge in this castle, an event dramatized in Christopher Marlowe’s Edward II where the castle is used as a backdrop in Act II.
+
+At the end of the 19th century the castle became used as a barracks, in World War II the castle became part of the coastal defence installations covering the mouth of the river Tyne. A gun emplacement was built within the Priory precinct and can still be seen by visitors today.</description>
+<details>English Heritage site - free entry for members</details>
+<cost>ADULT £7.00
+CHILD £4.20
+CONCESSION £6.30
+FAMILY £18.20</cost>
+<facilities>Shop
+Toilets
+Gardens
+Exhibition</facilities>
+<public_transport>From Newcastletake the Yellow line metro eastwards towards the coast. From Tynemouth station a 15 walk to the coast</public_transport>
+<gallery>
+<image>
+<file_name>TynemouthCP1.jpg</file_name>
+<attribution>Northumbrianimages, 26 June 2014, https://northumbrianimages.blogspot.com/2014/06/tynemouth-priory-and-castle.html</attribution>
+</image>
+<image>
+<file_name>TynemouthCP2.jpg</file_name>
+<attribution>Northumbrianimages, 26 June 2014, https://northumbrianimages.blogspot.com/2014/06/tynemouth-priory-and-castle.html</attribution>
+</image>
+<image>
+<file_name>TynemouthCP3.jpg</file_name>
+<attribution>Northumbrianimages, 26 June 2014, https://northumbrianimages.blogspot.com/2014/06/tynemouth-priory-and-castle.html</attribution>
+</image>
+</gallery>
+<latitude>55.0184</latitude>
+<longitude>-1.4166</longitude>
+</entry>
+
+<entry>
+<name>Battle of Alnwick</name>
+<address>Off the BroomHouse Roundabout
+Alnwick
+Northumberland
+NE66 2LB</address>
+<era>Medieval</era>
+<type>Castle</type>
+<introduction>Hidden away in a field within view of the dramatic Alnwick castle this field marked the end of a Scottish incursion in to England.</introduction>
+<description>Today only a gothic style cross remains to mark the location of the first battle of Alnwick.
+In the late eleventh century Malcolm III sought to claim northern England for the Scottish Crown. With William II distracted by political events in Normandy, the Scottish King invaded but was ambushed and killed at the first Battle of Alnwick (1093) by an English force under Robert de Mowbray, Earl of Northumbria</description>
+<details>No signage,
+only one monument remains</details>
+<cost>Free</cost>
+<facilities>None</facilities>
+<public_transport>From Newcastle take a train north to Alnmouth station, fom Alnmouth take the X18/X20 towards Alnwick. From Alnwick it is a 20 minute walk from the castle to the old battlefield.</public_transport>
+<gallery>
+<image>
+<file_name>bAlnwick1.jpg</file_name>
+<attribution>James Lancaster / BattlefieldsofBritain.co.uk , http://www.battlefieldsofbritain.co.uk/assets/alnwick_castle.jpg</attribution>
+</image>
+<image>
+<file_name>bAlnwick2.jpg</file_name>
+<attribution>James Lancaster / BattlefieldsofBritain.co.uk , http://www.battlefieldsofbritain.co.uk/assets/alnwick_castle.jpg</attribution>
+</image>
+</gallery>
+<latitude>55.4285</latitude>
+<longitude>-1.6950</longitude>
+</entry>
+
+<entry>
+<name>Alnwick Castle</name>
+<address>Alnwick Castle,
+Alnwick,
+Northumberland
+NE66 1NQ</address>
+<era>medieval</era>
+<type>Castle</type>
+<introduction>One of Britain’s largest inhabited castles, explore the centuries of history as well as Harry-Potter inspired events!</introduction>
+<description>The second largest inhabited castle in the UK, Alnwick has served as a military outpost, a teaching college, a refuge for evacuees, a film set, and not least as a family home since construction began in 1096.
+
+The origins of Alnwick castle date back to the Norman period. Since 1309 its story has been intertwined with that of the Percy family, a family with a history as illustrious as the castle’s own.</description>
+<cost>CHILD £7.95
+ADULT £15.05</cost>
+<facilities>Toilets, café, parking spaces and disabled spots</facilities>
+<public_transport>From Newcastle bus station, take the X15 MAX for 43 stops. It's then a 7 minute walk to the site.</public_transport>
+<gallery>
+<image>
+<file_name>AlnwickCastle1.jpg</file_name>
+<attribution>Phill Thomas, 2 April 2009, https://commons.wikimedia.org/wiki/File:Alnwick_Castle_02.jpg</attribution>
+</image>
+<image>
+<file_name>AlnwickCastle2.jpg</file_name>
+<attribution>Len Williams, 28 May 2016 ,https://www.geograph.org.uk/photo/4993385</attribution>
+</image>
+</gallery>
+<latitude>55.4156</latitude>
+<longitude>-1.7050</longitude>
+</entry>
+
+<entry>
+<name>Battle Of Halidon Hill</name>
+<address>Halidon Hill, Berwick-upon-Tweed TD15 1UE</address>
+<era>medieval</era>
+<type>Battlefield</type>
+<introduction>The site of one of the bloodiest battles of the Second War of Scottish independence, where King Edward III saw his first victory in battle.</introduction>
+<description>The Battle of Halidon Hill (19 July 1333) was fought during the Second War of Scottish Independence. Scottish forces under Sir Archibald Douglaswere heavily defeated by the English forces of King Edward III of England on unfavourable terrain while trying to relieve Berwick-upon-Tweed.
+
+It was King Edward III first battle,it is said that he learnt many tactics which he later used against French forces in the battles of Crey and Poiters.</description>
+<cost>FREE</cost>
+<public_transport>From Newcastle Central Station, take a train towards Edinburgh for 2 stops, then take the bus 60 for 6 stops, it is then a 5 minute walk to the site.</public_transport>
+<gallery>
+<image>
+<file_name>BattleOfHalidonHill1.jpg</file_name>
+<attribution>Barbara Carr, 24 May 2013, https://www.geograph.org.uk/photo/3474281</attribution>
+</image>
+<image>
+<file_name>BattleOfHalidonHill2.jpg</file_name>
+<attribution>Mat Fascoine, 3 May 2018, https://www.geograph.org.uk/photo/5858274</attribution>
+</image>
+</gallery>
+<latitude>55.7878</latitude>
+<longitude>-2.0635</longitude>
+</entry>
+
+<entry>
+<name>Battle of Humbleton Hill</name>
+<address>Wooler,
+Northumberland</address>
+<era>medieval</era>
+<type>Battlefield</type>
+<introduction>The site of battle between English and Scottish armies, home to a walking trail and breathtaking scenery</introduction>
+<description>The battle of Humbleton Hill was a conflict between English and Scottish armies on 14 September 1402 near Wooler in Northumberland.
+
+The battle was mentioned by Shakespeare in Henry IV Pt1. The Bendor or ‘Battle stone’ which has traditionally marked the spot of conflict is made of bronze</description>
+<cost>FREE</cost>
+<public_transport>From Newcastle Central Station, take a train towards Edinburgh for 2 stops, take the 267 bus for 25 stops and then it is a 15 minute walk to the site.</public_transport>
+<gallery>
+<image>
+<file_name>BattleOfHumbletonHill1.jpeg</file_name>
+<attribution>Peter Mattock, 2000, https://en.wikipedia.org/wiki/File:BendorStoneHomildon.jpg</attribution>
+</image>
+<image>
+<file_name>BattleOfHumbletonHill2.jpeg</file_name>
+<attribution>Andrew Curtis, 25 September 2009, https://www.geograph.org.uk/photo/1509255</attribution>
+</image>
+</gallery>
+<latitude>55.5562</latitude>
+<longitude>-2.0474</longitude>
+</entry>
+
+<entry>
+<name>Berwick Castle</name>
+<address>Berwick-upon-Tweed,
+Northumberland,
+TD15 1DF</address>
+<era>medieval</era>
+<type>Castle</type>
+<introduction>The remains of a medieval castle crucial to Anglo-Scottish warfare</introduction>
+<description>The remains of a medieval castle crucial to Anglo-Scottish warfare, superseded by the most complete and breathtakingly impressive bastioned town defences in England, mainly Elizabethan but updated in the 17th and 18th centuries.
+
+One of the access points onto the Ramparts is at Berwick-Upon-Tweed Barracks. Among the first barracks to be purpose built in England, they now house several historic exhibitions and in the summer host contemporary art installations in the Gymnasium Art Gallery.</description>
+<cost>FREE</cost>
+<facilities>Toilets, shop selling drinks and snacks, disabled access to ramparts</facilities>
+<public_transport>From Newcastle Central Station, take a train towards Edinburgh for 2 stops, the site is a one minute walk away.</public_transport>
+<gallery>
+<image>
+<file_name>BerwickCastle1.jpg</file_name>
+<attribution>Euan Nelson, 17 April 2008, https://www.geograph.org.uk/photo/768511</attribution>
+</image>
+<image>
+<file_name>BerwickCastle2.jpg</file_name>
+<attribution>Rosser1954, 9 November 2017, https://commons.wikimedia.org/wiki/File:Berwick_Castle_%27Breakneck_Path%27_and_wall,_Berwick-upon-Tweed,_Northumbria.jpg</attribution>
+</image>
+</gallery>
+<latitude>55.7713</latitude>
+<longitude>-2.0012</longitude>
+</entry>
+
+<entry>
+<name>Etal Castle</name>
+<address>Cornhill on Tweed, Northumberland, TD12 4TN</address>
+<era>medieval</era>
+<type>Castle</type>
+<introduction>Where James IV’s invading Scots army slept, just prior to their crushing defeat at the Battle of Flodden</introduction>
+<description>Ruins of a 14th century castle. Built by Robert Manners in the mid-14th century, the castle guards a strategic crossing of the River Till. Primarily constructed as a dwelling house, its location in the troubled England - Scotland border region meant that shortly after building it was fortified and strengthened.
+
+The castle fell to James IV’s invading Scots army in 1513, just prior to their crushing defeat at the Battle of Flodden. The remains of the impressive central keep still stand.</description>
+<cost>ADULT £5.70
+CHILD £3.40
+FAMILY £14.80</cost>
+<facilities>parking, food/drink, shops, toilets, family friendly</facilities>
+<public_transport>From Newcastle Central Station, take a train towards Edinburgh for 2 stops, then take the 267 bus for 15 stops, the site is a 3 minute walk from the bus stop.</public_transport>
+<gallery>
+<image>
+<file_name>EtalCastle1.jpg</file_name>
+<attribution>G Laird, 20 April 2017, https://www.geograph.org.uk/photo/5359404</attribution>
+</image>
+<image>
+<file_name>EtalCastle2.jpg</file_name>
+<attribution>David Robinson, 27 May 2009, https://www.geograph.org.uk/photo/2525617</attribution>
+</image>
+</gallery>
+<latitude>55.6438</latitude>
+<longitude>-2.1178</longitude>
+</entry>
+
+<entry>
+<name>Carvoran Fort</name>
+<address>Carvoran, NE19 2RJ</address>
+<era>Roman</era>
+<type>Fort</type>
+<introduction>One of the defences associated with Hadrian’s Wall and vital to the defense of the northern frontier of the Roman Empire.</introduction>
+<description>Originally built to protect the junction between the Stanegate Road and Maiden Way, Carvoran Roman Fort (known as Magna) later became part of the defences associated with Hadrian’s Wall and the northern frontier of the Roman Empire.</description>
+<cost>FREE</cost>
+<facilities>on-site car parking, close to roman army museum</facilities>
+<gallery>
+<image>
+<file_name>CarvoranFort1.jpg</file_name>
+<attribution>Mike Quinn, 22 April 2009, https://commons.wikimedia.org/wiki/File:Carvoran_(Magna)_Roman_Fort_-_tower_at_northwest_corner_-_geograph.org.uk_-_1374195.jpg</attribution>
+</image>
+<image>
+<file_name>CarvoranFort2.jpg</file_name>
+<attribution>Mike Quinn, 22 April 2009, https://commons.wikimedia.org/wiki/File:Carvoran_(Magna)_Roman_Fort_-_tower_at_northwest_corner_(2)_-_geograph.org.uk_-_1374211.jpg</attribution>
+</image>
+</gallery>
+<latitude>55.1918</latitude>
+<longitude>-2.0702</longitude>
+</entry>
+
+<entry>
+<name>Bellister Castle</name>
+<address>Bellister Castle, Haltwhistle, Northumberland, NE49 0HZ</address>
+<era>medieval</era>
+<type>Castle</type>
+<introduction>The remains of a 19th century mansion house attached to the ruins of a 14th century tower house.</introduction>
+<description>Remains of a 19th century mansion house attached to the ruins of a 14th century tower house. This ruined castellated 19th century mansion house and remains of a 14th century tower house stand on what may have been an earlier motte and bailey castle.
+
+The mansion house suffered serious fire damage in 1901, whilst the older remains were allowed to fall into decay.</description>
+<cost>FREE</cost>
+<facilities>car park</facilities>
+<public_transport>From Newcastle Central Station take a train towards Carlisle for 4 stops, then take the 681 bus for 5 stops directly to the castle.</public_transport>
+<gallery>
+<image>
+<file_name>BellisterCastle1.jpg</file_name>
+<attribution>Anthony Parkes, 20 jUNE 2011, https://en.m.wikipedia.org/wiki/File:Bellister_Castle_-_geograph.org.uk_-_2765227.jpg</attribution>
+</image>
+<image>
+<file_name>BellisterCastle2.jpg</file_name>
+<attribution>Andrew Curtis, 13 July 2018, https://www.geograph.org.uk/photo/5841008</attribution>
+</image>
+</gallery>
+<latitude>54.9603</latitude>
+<longitude>-2.4688</longitude>
+</entry>
+
+<entry>
+<name>Aydon Castle</name>
+<address>Off Aydon Road,
+Corbridge,
+Northumberland,
+NE45 5PJ</address>
+<era>Medieval</era>
+<type>Castle</type>
+<introduction>An almost completely intact, unaltered 13th century English manor house, originally built as an undefended residence.</introduction>
+<description>Almost completely intact, it is one of the finest and most unaltered examples of a 13th century English manor house. Set in a beautiful and secluded Northumberland woodland, it was originally built as an undefended residence, but was almost immediately fortified on the outbreak of Anglo-Scottish warfare.
+
+Nevertheless it was pillaged and burnt by the Scots in 1315, seized by English rebels two years later, and again occupied by Scots in 1346. The castle later became a farmhouse in the 17th century and was lived in up until 1966.</description>
+<cost>ADULT £5.70
+CHILD £3.40
+FAMILY £14.80
+</cost>
+<facilities>on-site parking, tea room, picnic area, shop, toilets, dog friendly, gardens</facilities>
+<gallery>
+<image>
+<file_name>AydonCastle1.jpg</file_name>
+<attribution>Mike Quinn, 11 June 2007, https://en.wikipedia.org/wiki/File:Aydon_Castle_2.jpg</attribution>
+</image>
+<image>
+<file_name>AydonCastle2.jpg</file_name>
+<attribution>Hadrianus1959, 14 June 2009, https://commons.wikimedia.org/wiki/File:Aydon_Castle_(inner_court).jpg</attribution>
+</image>
+</gallery>
+<latitude>54.9916</latitude>
+<longitude>-2.0030</longitude>
+</entry>
+
+<entry>
+<name>Prudhoe Castle</name>
+<address>Castle View,
+Ovingham,
+Prudhoe,
+NE42 6NA</address>
+<era>medieval</era>
+<type>Castle</type>
+<introduction>One of the only Northumberland castle to resist the Scots. Home of the famous Percy family.</introduction>
+<description>Built as part of a series of Norman Castles along the Tyne after the 1066 Norman conquest, Prudhoe was continuously occupied for over nine centuries. It was originally the home of the Umfravilles but was eventually taken over by the famous Percy family who restored it.
+
+Prudhoe survived two sieges during the 1170s and was the only Northumberland castle to resist the Scots.
+</description>
+<cost>ADULT £5.90
+CHILD £3.50
+FAMILY £15.30</cost>
+<facilities>on-site parking, tea room, picnic area, shop, toilets, exhibitions, gardens</facilities>
+<public_transport>From Newcastle Central Station take a train towards Carlisle for 2 stops, the site is a 9 minute walk from the station.</public_transport>
+<gallery>
+<image>
+<file_name>PrudhoeCastle1.jpg</file_name>
+<attribution>Andrew Curtis, 13 September 2019, https://www.geograph.org.uk/photo/6265365</attribution>
+</image>
+<image>
+<file_name>PrudhoeCastle2.jpg</file_name>
+<attribution>Chris Tweedy, 8 August 2005, https://www.geograph.org.uk/photo/93654</attribution>
+</image>
+</gallery>
+<latitude>54.9653</latitude>
+<longitude>-1.8586</longitude>
+</entry>
+
+<entry>
+<name>Belsay Castle</name>
+<address>Belsay,
+Near Morpeth,
+Northumberland,
+NE20 0DX</address>
+<era>medieval</era>
+<type>Castle</type>
+<introduction>The remains of a medieval castle; the three story rectangular pele tower with turrets and battlements was constructed around 1370.</introduction>
+<description>Remains of a medieval castle. This substantial, three story rectangular pele tower with turrets and battlements was constructed around 1370.
+Home to the Middleton family, a new manor house was added to the tower in 1614. The castle was abandoned by the family in the early 19th century.
+</description>
+<cost>ADULT £10.00
+CHILD £6.00
+FAMILY £26.00</cost>
+<facilities>free parking, café, picnic area, shop, toilets, dog friendly, exhibitions, gardens</facilities>
+<public_transport>From Newcastle bus station(Eldon Square) take the 131 bus for 13 stops, the site is then a 20 minute walk from the bus stop.</public_transport>
+<gallery>
+<image>
+<file_name>BelsayCastle1.jpg</file_name>
+<attribution>Mike Quinn, 19 June 2009, https://www.geograph.org.uk/photo/1479397</attribution>
+</image>
+<image>
+<file_name>BelsayCastle2.jpg</file_name>
+<attribution>Chris Gunns, 1 August 2008, https://commons.wikimedia.org/wiki/File:Belsay_Castle_-_geograph.org.uk_-_968969.jpg</attribution>
+</image>
+</gallery>
+<latitude>55.0973</latitude>
+<longitude>-1.8535</longitude>
+</entry>
+
+<entry>
+<name>Morpeth Castle</name>
+<address>Sanderson Arcade,
+Morpeth,
+NE61 1NS</address>
+<era>medieval</era>
+<type>Castle</type>
+<introduction>The first Norman motte and bailey castle in Morpeth was built in the 11th century, in an attempt to control England’s northern borders.</introduction>
+<description>Remains of 14th century castle and restored gatehouse. The first Norman motte and bailey castle in Morpeth was built in the 11th century, in an attempt to control England’s northern borders.
+
+That early structure was demolished in 1215, and a second castle was built on the same site in the early 14th century. The one great military event in the castle’s history appears to have been in 1644, when a garrison of 500 Lowland Scots held it for Parliament for 20 days against 2,700 Royalists. Today, sections of the curtain wall remain intact as well as the restored gatehouse.</description>
+<cost>FREE</cost>
+<facilities>car parking</facilities>
+<public_transport>From Newcastle bus station (Haymarket) take the X14 MAX for 12 stops, the castle is then a 3 minute walk from the bus stop.</public_transport>
+<gallery>
+<image>
+<file_name>MorpethCastle1.jpg</file_name>
+<attribution>C G Burke, 21 August 2006, https://commons.wikimedia.org/wiki/File:Morpeth_Castle_Gatehouse.jpg</attribution>
+</image>
+<image>
+<file_name>MorpethCastle2.jpg</file_name>
+<attribution>Hadrianus1959, 21 February 2018, https://commons.wikimedia.org/wiki/File:Morpeth_Castle_(gatehouse).jpg</attribution>
+</image>
+</gallery>
+<latitude>55.1682</latitude>
+<longitude>-1.6891</longitude>
+</entry>
+
+<entry>
+<name>Chillingham Castle</name>
+<address>Chillingham, Alnwick NE66 5NJ</address>
+<era>medieval</era>
+<type>Castle</type>
+<introduction>The 12th century monastery turned medieval castle, home to the Grey family and their descendants since 1246.</introduction>
+<description>Intact medieval castle. Built in the 12th century as a monastery, Chillingham has been home to the Grey family and their descendants since 1246.
+
 King Edward I visited the castle in 1298, on his way north to battle William Wallace.
- Chillingham became a fully fortified castle in 1344, complete with dungeons and torture chambers. At its centre is the Great Hall, an Elizabethan chamber overlooked by a medieval minstrel’s gallery.</details>
-        <cost>ADULT £10.50
-              CHILD £6.50
-              FAMILY £26.00</cost>
-        <facilities>tea room, on-site parking</facilities>
-        <public_transport>From Newcastle bus Station (Haymarket) take the X15 MAX for 45 stops, the take the 470 bus for 8 stops, the site is then an 8 minute walk from the bus stop.</public_transport>
-        <gallery>
-            <image>
-                <file_name>ChillinghamCastle1.jpg</file_name>
-                <attribution>Glen Bowman, 29 August 2005, https://commons.wikimedia.org/wiki/File:Chillingham_Castle.jpg</attribution>
-            </image>
-            <image>
-                <file_name>ChillinghamCastle2.jpg</file_name>
-                <attribution>TSP, 6 January 2020, https://commons.wikimedia.org/wiki/File:Chillingham_Castle_north_front.jpg</attribution>
-            </image>
-        </gallery>
-		<latitude>55.5241</latitude>
-		<longitude>-1.8885</longitude>
-    </entry>
-	
+
+Chillingham became a fully fortified castle in 1344, complete with dungeons and torture chambers. At its centre is the Great Hall, an Elizabethan chamber overlooked by a medieval minstrel’s gallery.</description>
+<cost>ADULT £10.50
+CHILD £6.50
+FAMILY £26.00</cost>
+<facilities>tea room, on-site parking</facilities>
+<public_transport>From Newcastle bus Station (Haymarket) take the X15 MAX for 45 stops, the take the 470 bus for 8 stops, the site is then an 8 minute walk from the bus stop.</public_transport>
+<gallery>
+<image>
+<file_name>ChillinghamCastle1.jpg</file_name>
+<attribution>Glen Bowman, 29 August 2005, https://commons.wikimedia.org/wiki/File:Chillingham_Castle.jpg</attribution>
+</image>
+<image>
+<file_name>ChillinghamCastle2.jpg</file_name>
+<attribution>TSP, 6 January 2020, https://commons.wikimedia.org/wiki/File:Chillingham_Castle_north_front.jpg</attribution>
+</image>
+</gallery>
+<latitude>55.5241</latitude>
+<longitude>-1.8885</longitude>
+</entry>
+
 </entries>

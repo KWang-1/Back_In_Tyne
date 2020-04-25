@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!-- Data file for modern events occurring at historical sites -->
+
 <entries>
 
     <entry>
@@ -8,16 +10,6 @@
         <details>Hear thrilling and harrowing stories from the long and eventful history of Alnwick Castle, as you walk the grounds with one of our knowledgeable guides. Alnwick Castle has been at the forefront of history for centuries. From attacks by Scottish kings to resident knights like Harry Hotspur, through to restorations in the Georgian and Victorian eras, there is always more to discover.</details>
 		<link>https://www.visitnorthumberland.com/family-event/historical-grounds-tour-</link>
         <date>21/06/2020 - 23/09/2020</date>
-        <gallery>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-        </gallery>
     </entry>
 	<entry>
         <name>Romeo &amp; Juliet - Outdoor Shakepspeare performance</name>
@@ -25,16 +17,6 @@
         <details>Join us in the grounds of Hulne Abbey for an unforgettable night as The Three Inch Fools perform Romeo and Juliet in this outdoor theatre performance. This romantic epic will be getting the full Three Inch Fools treatment: live music-making, deft physically and vibrant story-telling. Expect fast-paced drama, plenty of musical instruments and many a quick costume change along the way! Gates open from 6pm. Performance starts at 7pm. Tickets to be released on 27th March For more information, please visit our website.</details>
 		<link>https://www.visitnorthumberland.com/shows-displays/romeo-juliet-outdoor-shakespeare-performance</link>
         <date>4/07/2020 6pm</date>
-        <gallery>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-        </gallery>
     </entry>
     <entry>
         <name>Fighting Knights</name>
@@ -44,16 +26,6 @@ Cheer on either Sir Lewis or Sir Jay as these two highly skilled knights battle 
 </details>
 		<link>https://www.visitnorthumberland.com/family-event/fighting-knights-</link>
         <date>26/05/2020 - 29/05/2020</date>
-        <gallery>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-        </gallery>
     </entry>
 	<entry>
         <name>Alpaca Minitreks</name>
@@ -61,16 +33,6 @@ Cheer on either Sir Lewis or Sir Jay as these two highly skilled knights battle 
         <details>A first for Bamburgh Castle as these super-cute camelids come to meet our visitors. Hang out with these friendly alpacas for a selfie and a cuddle, or go on a mini-alpaca trek for a unique experience around the castle’s grounds. Charges apply for mini alpaca treks.</details>
 		<link> https://www.beirhope.co.uk/</link>
         <date>14/04/2020 11am</date>
-        <gallery>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-        </gallery>
     </entry>
     <entry>
         <name>Medieval Archery </name>
@@ -78,16 +40,6 @@ Cheer on either Sir Lewis or Sir Jay as these two highly skilled knights battle 
         <details>Try your hand at archery with bow and arrow sessions with everyone’s favourite medieval archer – Rusty Bodkins. it’s not quite as easy as you think! </details>
 		<link>https://www.bamburghcastle.com/whats-on/</link>
         <date>08/05/2020 - 09/05/2020</date>
-        <gallery>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-        </gallery>
     </entry>
 	<entry>
         <name>Anglo Saxon Week</name>
@@ -99,16 +51,6 @@ At the heart of the living history encampment is the kitchen where butter, ale, 
 </details>
 		<link>https://www.bamburghcastle.com/whats-on/</link>
         <date>23/05/2020 – 25/05/2020</date>
-        <gallery>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-        </gallery>
     </entry>
 	<entry>
         <name>Warkworth Show</name>
@@ -116,16 +58,6 @@ At the heart of the living history encampment is the kitchen where butter, ale, 
         <details>Held annually in mid-August since 1859 in the grounds of Warkworth Castle, Warkworth Show offers visitors the unique opportunity to explore one of Northumberland's iconic castles as well as experiencing an integral part of village life in this historic community</details>
 		<link>http://warkworthshow.co.uk/</link>
         <date>22/08/2020</date>
-        <gallery>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-        </gallery>
     </entry>
 	<entry>
         <name>Knight’s Tournament</name>
@@ -133,16 +65,6 @@ At the heart of the living history encampment is the kitchen where butter, ale, 
         <details>Go back in time and get closer to the action as rival knights compete in the ultimate test of strength and skill at the Warkworth Castle Knights’ Tournament this May. Arrows will fly, swords will clash and the winner will be decided in the Grand Melee finale. Archery, single combat, learn more about the process of a knight getting ready for battle. Live medieval music. Meet our resident medieval jester and other medieval people. Get your tickets now and book your place at one of history’s most spectacular sporting contests.</details>
 		<link>https://www.english-heritage.org.uk/visit/whats-on/warkworth-castle-knights-tournament-23-25-may-2020/</link>
         <date>23/05/2020 - 25/05/2020 11am</date>
-        <gallery>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-        </gallery>
     </entry>
 	<entry>
         <name>Vintage Rally</name>
@@ -152,16 +74,6 @@ Paxton House Vintage Rally was started back in 2000 and this year is its 20th ye
 </details>
 		<link>https://paxtonhouse.co.uk/event/vintage-rally-3/</link>
         <date>21/06/2020 10am</date>
-        <gallery>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-        </gallery>
     </entry>
 	<entry>
         <name>Outdoor Theatre – A Midsummer Night’s Dream</name>
@@ -173,16 +85,6 @@ Paxton House tearoom will be open and serving hot food, traybakes and refreshmen
 </details>
 		<link>https://paxtonhouse.co.uk/event/outdoor-theatre-a-midsummer-nights-dream/</link>
         <date>11/07/2020 8pm</date>
-        <gallery>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-        </gallery>
     </entry>
 	<entry>
         <name>Easter Saturday Roman Fayre</name>
@@ -190,36 +92,15 @@ Paxton House tearoom will be open and serving hot food, traybakes and refreshmen
         <details>Browse the Roman market, see gladiators doing battle, have-a-go at archery or get involved in the hands-on craft activities all from historical tents.</details>
 		<link>https://arbeiaromanfort.org.uk/whats-on/easter-saturday-roman-fayre</link>
         <date>11/04/2020 11am</date>
-        <gallery>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-        </gallery>
     </entry>
 	<entry>
         <name>Militaria Exhibition</name>
         <location>Vindolanda Fort</location>
         <details>A temporary exhibition at the Roman Army Museum showing an assembly of militiary artefacts never seen in pulbic which are on private loan to the Vindolanda Trust.
 
-Over 40 objects are being loaned to the museum from a private collector and highlights include a complete legionary helmet found at a site in Wiesbaden-Erbenheim (Germany) in 1970/71 and a military diploma bestowing Roman Citizenship to Longinus Festius who served as a member of a unit of Syrian archers and who were later stationed at Magna, the fort next to the Roman Army Museum. This collection of artefacts will also highlight a range of fascinating fibula or brooches illustrating the Roman soldiers flare for the decorative.
-</details>
+Over 40 objects are being loaned to the museum from a private collector and highlights include a complete legionary helmet found at a site in Wiesbaden-Erbenheim (Germany) in 1970/71 and a military diploma bestowing Roman Citizenship to Longinus Festius who served as a member of a unit of Syrian archers and who were later stationed at Magna, the fort next to the Roman Army Museum. This collection of artefacts will also highlight a range of fascinating fibula or brooches illustrating the Roman soldiers flare for the decorative.</details>
 		<link>https://www.vindolanda.com/Event/militaria-exhibition</link>
         <date>01/04/2020 - 31/10/2020 </date>
-        <gallery>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-        </gallery>
     </entry>
 	<entry>
         <name>Archaeology Half Term</name>
@@ -227,15 +108,5 @@ Over 40 objects are being loaned to the museum from a private collector and high
         <details>This half term, join in the adventurous quest of our two Victorian time travellers who helped discover Chesters' Roman remains and its ancient artefacts. Find out about the tools used to excavate discoveries, take part in activities to guess what the fragments from the past were used for and visit our museum to see Roman objects and original archaeology on display.</details>
 		<link>https://www.english-heritage.org.uk/visit/whats-on/chesters-roman-fort-archaeology-half-term-23-31-may-2020/</link>
         <date>23/05/2020 - 31/05/2020 11am</date>
-        <gallery>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-            <image>
-                <file_name></file_name>
-                <attribution></attribution>
-            </image>
-        </gallery>
     </entry>
 </entries>
