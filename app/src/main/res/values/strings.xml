@@ -61,7 +61,7 @@
 
     <string name="events_title">Meet new people…</string>
     <string name="events_description">Northumbria has a thriving community of people who have an interest for the history of the local area. With the resources below you can attend events hosted by these communities to learn and make connections. We highly encourage this as it is a way for you to get to know people who share a similar passion for History. A gateway for you to experience what Northumbria has to offer and take your historical knowledge to the next level.</string>
-    <string name="events_renact_title"> Re-enactment societies:</string>
+    <string name="events_list_title">List of societies:</string>
 
     <!-- Settings Fragment -->
 
